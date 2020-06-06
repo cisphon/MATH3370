@@ -8,5 +8,11 @@ vector<double> run()
 {
   //homework::run_homework();
   
-  return homework::one::section2::c();
+  return homework::one::section3::a();
+}
+
+// [[Rcpp::export]]
+void test()
+{
+  tools::print_vector(homework::one::section3::a());
 }

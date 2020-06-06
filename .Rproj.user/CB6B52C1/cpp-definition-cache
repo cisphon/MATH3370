@@ -1,7 +1,7 @@
 [
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-        "file_last_write": 1591480353.0,
+        "file_last_write": 1591482559.0,
         "definitions": [
             {
                 "usr": "c:@N@homework@N@one@N@section2@F@a#",
@@ -31,12 +31,21 @@
                 "column": 22
             },
             {
+                "usr": "c:@N@homework@N@one@N@section3@F@a#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "a",
+                "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
+                "line": 58,
+                "column": 22
+            },
+            {
                 "usr": "c:@N@homework@N@one@N@section3@F@b#",
                 "kind": 6,
                 "parent_name": "",
                 "name": "b",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 53,
+                "line": 69,
                 "column": 12
             },
             {
@@ -45,7 +54,7 @@
                 "parent_name": "",
                 "name": "a",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 87,
+                "line": 103,
                 "column": 12
             },
             {
@@ -54,7 +63,7 @@
                 "parent_name": "",
                 "name": "b",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 110,
+                "line": 126,
                 "column": 12
             },
             {
@@ -63,7 +72,7 @@
                 "parent_name": "",
                 "name": "b",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 136,
+                "line": 152,
                 "column": 12
             },
             {
@@ -72,7 +81,7 @@
                 "parent_name": "",
                 "name": "c",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 156,
+                "line": 172,
                 "column": 12
             },
             {
@@ -81,7 +90,7 @@
                 "parent_name": "",
                 "name": "a",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 183,
+                "line": 199,
                 "column": 12
             },
             {
@@ -90,7 +99,7 @@
                 "parent_name": "",
                 "name": "b",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 193,
+                "line": 209,
                 "column": 12
             },
             {
@@ -99,7 +108,7 @@
                 "parent_name": "",
                 "name": "c",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 205,
+                "line": 221,
                 "column": 12
             },
             {
@@ -108,7 +117,7 @@
                 "parent_name": "",
                 "name": "a",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 232,
+                "line": 248,
                 "column": 12
             },
             {
@@ -117,7 +126,7 @@
                 "parent_name": "",
                 "name": "a",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 242,
+                "line": 258,
                 "column": 12
             },
             {
@@ -126,7 +135,7 @@
                 "parent_name": "",
                 "name": "b",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 250,
+                "line": 266,
                 "column": 12
             },
             {
@@ -135,7 +144,7 @@
                 "parent_name": "",
                 "name": "a",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 262,
+                "line": 278,
                 "column": 12
             },
             {
@@ -144,7 +153,7 @@
                 "parent_name": "",
                 "name": "b",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 267,
+                "line": 283,
                 "column": 12
             },
             {
@@ -153,7 +162,7 @@
                 "parent_name": "",
                 "name": "c",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 274,
+                "line": 290,
                 "column": 12
             },
             {
@@ -162,7 +171,7 @@
                 "parent_name": "",
                 "name": "a",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 281,
+                "line": 297,
                 "column": 12
             },
             {
@@ -171,7 +180,7 @@
                 "parent_name": "",
                 "name": "b",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 290,
+                "line": 306,
                 "column": 12
             },
             {
@@ -180,7 +189,7 @@
                 "parent_name": "",
                 "name": "c",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 307,
+                "line": 323,
                 "column": 12
             },
             {
@@ -189,7 +198,7 @@
                 "parent_name": "",
                 "name": "d",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 320,
+                "line": 336,
                 "column": 12
             },
             {
@@ -198,7 +207,7 @@
                 "parent_name": "",
                 "name": "a",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 334,
+                "line": 350,
                 "column": 12
             },
             {
@@ -207,7 +216,7 @@
                 "parent_name": "",
                 "name": "b",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 349,
+                "line": 365,
                 "column": 12
             },
             {
@@ -216,14 +225,14 @@
                 "parent_name": "",
                 "name": "run_homework",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 360,
+                "line": 376,
                 "column": 8
             }
         ]
     },
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
-        "file_last_write": 1591480564.0,
+        "file_last_write": 1591482729.0,
         "definitions": [
             {
                 "usr": "c:@F@run#",
@@ -233,12 +242,21 @@
                 "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
                 "line": 7,
                 "column": 16
+            },
+            {
+                "usr": "c:@F@test#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "test",
+                "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
+                "line": 15,
+                "column": 6
             }
         ]
     },
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-        "file_last_write": 1591479050.0,
+        "file_last_write": 1591481824.0,
         "definitions": [
             {
                 "usr": "c:@N@tools@FT@>1#Tput_nums_in_vector#&>@N@std@ST>2#T#T@vector2t0.0>@N@std@ST>1#T@allocator1S2_#$@N@std@N@__cxx11@S@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@S@allocator>#C#v#",

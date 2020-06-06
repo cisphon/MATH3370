@@ -3,7 +3,7 @@
     "path": "~/Desktop/RStatistics/src/main.cpp",
     "project_path": "src/main.cpp",
     "type": "cpp",
-    "hash": "2864297390",
+    "hash": "3808652089",
     "contents": "",
     "dirty": false,
     "created": 1591478373609.0,
@@ -11,15 +11,15 @@
     "relative_order": 3,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "8,29",
+        "cursorPosition": "11,1",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1591480564,
+    "lastKnownWriteTime": 1591482729,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1591480564467,
+    "last_content_update": 1591482729893,
     "read_only": false,
     "read_only_alternatives": []
 }

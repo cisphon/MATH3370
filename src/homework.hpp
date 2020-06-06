@@ -39,7 +39,7 @@ namespace homework {
     
       /*
       Use this in R to make it work:
-      vec = run()
+      vec = c()
       hist(vec, xlab = "number", col = "blue", xlim = c(0,8), ylim = c(0,25))
       */
       vector<double> c()
@@ -50,6 +50,22 @@ namespace homework {
       }
     }
     namespace section3 {
+      /*
+      Use this in R to make it work:
+      vec = a()
+      hist(vec, xlab = "number", col = "blue", xlim = c(0,16), ylim = c(0,60))
+      */
+      vector<double> a()
+      {
+        vector<double> nums;
+        tools::put_nums_in_vector(nums, "papers.txt");
+        
+        int sum = tools::sum_vector(nums);
+        for (int i = 0; i < nums.size(); ++i)
+          nums[i] = ((nums[i] / sum) * 100);
+    
+        return nums;
+      }
       void b() {
         vector<int> nums;
         tools::put_nums_in_vector(nums, "papers.txt");
