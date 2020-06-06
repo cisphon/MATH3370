@@ -1,0 +1,25 @@
+{
+    "id": "51F29139",
+    "path": "~/Desktop/RStatistics/src/homework.hpp",
+    "project_path": "src/homework.hpp",
+    "type": "hpp",
+    "hash": "100884561",
+    "contents": "",
+    "dirty": false,
+    "created": 1591478607081.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "48,20",
+        "scrollLine": "0"
+    },
+    "folds": "8|16|17|6|\n18|16|37|6|\n51|24|84|4|\n52|16|83|6|\n85|24|133|4|\n86|16|108|6|\n109|16|132|6|\n134|24|176|4|\n135|16|154|6|\n155|16|175|6|\n180|17|357|2|\n181|24|229|4|\n230|24|239|4|\n240|24|259|4|\n260|24|278|4|\n279|24|331|4|\n332|24|356|4|\n359|23|393|2|\n",
+    "lastKnownWriteTime": 1591480353,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1591480353259,
+    "read_only": false,
+    "read_only_alternatives": []
+}
