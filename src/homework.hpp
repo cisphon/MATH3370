@@ -52,8 +52,7 @@ namespace homework {
     namespace section3 {
       /*
       Use this in R to make it work:
-      vec = a()
-      hist(vec, xlab = "number", col = "blue", xlim = c(0,16), ylim = c(0,60))
+      barplot(func())
       */
       vector<double> a()
       {
@@ -149,6 +148,13 @@ namespace homework {
       }
     }
     namespace section5 {
+      // 
+      vector<double> a()
+      {
+        vector<double> nums;
+        tools::put_nums_in_vector(nums, "fire_load.txt");
+        return nums;
+      }
       void b() {
         map<int, double> cumulative;
         

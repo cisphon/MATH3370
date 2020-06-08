@@ -18,7 +18,7 @@ using namespace std;
 namespace tools {
   template<typename T>
   void put_nums_in_vector(vector<T> &nums, string filename) {
-    ifstream in(filename, ios::in);
+    ifstream in("texts/" + filename, ios::in);
     
     T number;
     while (in >> number) //Read number using extraction (>>) operator
@@ -28,7 +28,7 @@ namespace tools {
   }
   
   void put_number_of_nums_in_vector(vector<int> &nums, const string file) {
-    ifstream myfile(file);
+    ifstream myfile("texts/" + file);
     
     string line;
     while (getline(myfile, line)) {
