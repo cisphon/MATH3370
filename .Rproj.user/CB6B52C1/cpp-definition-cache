@@ -241,7 +241,7 @@
     },
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
-        "file_last_write": 1591654579.0,
+        "file_last_write": 1591728865.0,
         "definitions": [
             {
                 "usr": "c:@F@run#",
@@ -258,7 +258,7 @@
                 "parent_name": "",
                 "name": "charity",
                 "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
-                "line": 15,
+                "line": 13,
                 "column": 16
             },
             {
@@ -267,14 +267,14 @@
                 "parent_name": "",
                 "name": "test",
                 "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
-                "line": 23,
+                "line": 21,
                 "column": 6
             }
         ]
     },
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-        "file_last_write": 1591652399.0,
+        "file_last_write": 1591724296.0,
         "definitions": [
             {
                 "usr": "c:@N@tools@FT@>1#Tput_nums_in_vector#&>@N@std@ST>2#T#T@vector2t0.0>@N@std@ST>1#T@allocator1S2_#$@N@std@N@__cxx11@S@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@S@allocator>#C#v#",

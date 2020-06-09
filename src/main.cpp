@@ -6,13 +6,7 @@ using namespace Rcpp;
 // [[Rcpp::export]]
 void run()
 {
-  deque<double> nums;
-  tools::put_nums_in_deque(nums, "urban.txt");
-  cout << (100.0 / nums.size()) << endl;
   
-  nums.clear();
-  tools::put_nums_in_deque(nums, "farm2.txt");
-  cout << (100.0 / nums.size()) << endl;
 }
 
 // [[Rcpp::export]] 
