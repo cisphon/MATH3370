@@ -27,6 +27,19 @@ namespace tools {
     in.close(); //Close the file stream
   }
   
+  template <typename T>
+  void put_nums_in_map(map<int, T> &m, string filename)
+  {
+    ifstream in("texts/" + filename, ios::in);
+    
+    int i = 0;
+    T number;
+    while (in >> number) //Read number using extraction (>>) operator
+      m[i++] = number;
+    
+    in.close(); //Close the file stream
+  }
+  
   void put_number_of_nums_in_vector(vector<int> &nums, const string file) {
     ifstream myfile("texts/" + file);
     
@@ -145,7 +158,7 @@ namespace tools {
   
   template<typename T>
   void put_nums_in_deque(deque<T> &nums, string filename) {
-    ifstream in(filename, ios::in);
+    ifstream in("texts/" + filename, ios::in);
     
     T number;
     while (in >> number) //Read number using extraction (>>) operator

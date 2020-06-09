@@ -146,14 +146,32 @@ namespace homework {
         
         printf("%0.2f\n", tools::round_x_decimal_places(freq / total, 2));
       }
+    
+      // barplot(c())
+      map<int,int> c()
+      {
+        map<int,int> m;
+        tools::put_nums_in_map(m, "particles.txt");
+        return m;
+      }
     }
     namespace section5 {
-      // 
-      vector<double> a()
+      // barplot(a())
+      map<int, double> a()
       {
-        vector<double> nums;
-        tools::put_nums_in_vector(nums, "fire_load.txt");
-        return nums;
+        vector<double> y_values;
+        tools::put_nums_in_vector(y_values, "fire_load.txt");
+        
+        map<int, double> m;
+        int sum = 0;
+        for (int i = 0; i < y_values.size() - 1; ++i)
+        {
+          m[sum] = (y_values[i+1] - y_values[i]);
+          sum += 150;
+        }
+        m[sum] = 0; // there is no difference for the last one.
+        
+        return m;
       }
       void b() {
         map<int, double> cumulative;
@@ -377,41 +395,5 @@ namespace homework {
         cout << tools::round_x_decimal_places(tools::sample_standard_deviation(nums), 3) << endl;
       }
     }
-  }
-
-  void run_homework() {
-    cout << "Homework 1: " << endl;
-    one::section2::a();
-    one::section2::b();
-    
-    one::section3::b();
-    
-    one::section4::a();
-    one::section4::b();
-    
-    one::section5::b();
-    one::section5::c();
-    
-    cout << "\nHomework 2: " << endl;
-    two::section1::a();
-    two::section1::b();
-    two::section1::c();
-    
-    two::section3::a();
-    
-    two::section4::a();
-    two::section4::b();
-    
-    two::section5::a();
-    two::section5::b();
-    two::section5::c();
-    
-    two::section6::a();
-    two::section6::b();
-    two::section6::c();
-    two::section6::d();
-    
-    two::section7::a();
-    two::section7::b();
   }
 }

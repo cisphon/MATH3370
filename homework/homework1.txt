@@ -1,0 +1,66 @@
+Section 1.1 – Problems 2-8
+
+	2:
+		a. 10ft, 15ft, 20ft, 25ft
+		b. 300pages, 250pages, 350pages, 400pages
+		c. 4, 5, 6, 7   
+		d. 1.2g, 3.2g, 2.2g, 4g
+
+	3:
+		a. 
+			How likely is it that more than half the computers will need or will have needed service? What is the expected number among the 100 that need warranty service? How likely is it that the number needing warranty service will exceed the expected number by more than 10?
+
+		b. 
+			Suppose that 30 of the 100 sampled needed warranty service. How confident can we be that the proportion of all such computers needing warranty service is between 0.10 or 0.24? Does the sample provide compelling evidence for concluding that more than 10% of all such computers need warranty service?
+
+	4:
+		a. 
+			Concrete populations: # students at lamar, # people filed taxes, # walmarts in the us.  
+			Hypothetical populations: # of people in the world, # people with coronavirus, # people with aids.
+		b.
+			The concrete population: All the pages in a book
+			The probability question: If you take 100 random pages from the book, what is the probability that it is the beginning of the chapter?	
+			The inferential statistics question: Is there any evidence that this book would teach anything?
+			
+			The hypothetical population: The people who read this piece of text.
+			The probability question: What is the probability that 10 people read this?
+			The inferential statistics question: Is there any evidence that shows the text has been read?
+
+	5:
+		a.	No. A sample of the existing population would be a portion of the students.
+		b.	Yes. Randomizing the groups helps against bias and makes them similar as possible.
+		c.	There wouldn't be anything to compare it with if all the students were put in the treatment group.
+
+	6:
+		It would be an enumerative study because the CSU administrator isn't interested in changing the system that changes the resulting data.		
+
+	7:
+		It would be an enumerative study because the CSU administrator isn't interested in changing the system that changes the resulting data.	
+
+	8:
+		a.	There are 3 factors and they all have 2 possible states. So it's 2^3 = 8 observations.
+		b.	This is an analytic study because they are interested in changing the system that changes the resulting data.
+
+Section 1.3 – Problems 34-38
+	34:
+		a.	The sample mean for the urban is 21.54 and the farm is 8.56. The urban is roughly 3x bigger than the farm.
+				Just add all the numbers in the urban together and divide it by the number of urban numbers to compute the mean (in this case, there are 11 numbers). 
+				It's the same way method to computer the farm mean.
+		
+		b.	The sample median for the urban is 17 and the farm is 8.9. The urban is approximately 2x bigger than the farm.
+				The median isn't affected by the large number that the urban has (which is 80.0).
+		
+		c.	The trimmed mean for the urban data is 17 and the farm is 8.24. The way to compute this trimmed means is to sort the data in ascending order and then remove the first and last numbers (which are the smallest and largest numbers). After removing the numbers, then compute the mean to get the trimmed mean. This applies for both urban and farm data.
+				
+				The corresponding trimmed percentage for the urban is 9.09 and the farm is 6.67. The way to compute these trimmed percentages is to take (1 / n) * 100 where n is the number of urban numbers. The same method applies for the farm data.
+				
+				The trimmed mean is smaller than the sample mean and the trimmed median is smaller than the sample median. This applies for both urban and farm.
+								
+
+	35:
+
+Section 1.4 – Problems 44-48
+
+Section 2.1 – Problems 2-10
+
+Section 2.2 – Problems 12-22
