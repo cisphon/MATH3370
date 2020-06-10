@@ -291,11 +291,8 @@ namespace homework {
         vector<double> cracks;
         tools::put_nums_in_vector(cracks, "cracks.txt");
         
-        double last_value = cracks[cracks.size() - 1];
-        tools::decrement_last_number_until_median_changes(cracks);
-        
-        double new_last_value = cracks[cracks.size() - 1];
-        cout << last_value - new_last_value << endl;
+        cout << cracks[cracks.size() - 1] 
+        - tools::decrement_last_number_until_median_changes(cracks) << endl;
       }
     }
     namespace section5 {

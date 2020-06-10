@@ -6,7 +6,7 @@ using namespace Rcpp;
 // [[Rcpp::export]]
 void run()
 {
-  
+  homework::two::section4::b();
 }
 
 // [[Rcpp::export]] 

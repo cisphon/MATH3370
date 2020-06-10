@@ -58,8 +58,24 @@ Section 1.3 – Problems 34-38
 								
 
 	35:
+		a.	The sample mean is 1.237 and the sample median is 0.56. They are different because they use different methods for computing the results. To compute the sample mean is to add all the numbers together and divide by the number of numbers there are. To compute the sample median is to sort the numbers in the list by ascending order and to find the middle value. If there are an even number of numbers then just add the middle values together and divide them by two.
 
-Section 1.4 – Problems 44-48
+		b.	The trimmed mean is 1.16. It is between the mean and the median (0.56(mean) < 1.16 < 1.237(median)). I found an error in the book and it says 1.118 but that is incorrect. I believe they trimmed the data twice instead of just one time. 
+				
+				To calculate the trimmed mean, you are supposed to first sort the array of numbers and then compute the number of numbers to remove using the following function: num = floor((n * 10) / 100), where n is the number of numbers in the array. you then remove the front and back numbers num amount of times and then compute the mean of the trimmed array. 
+
+		c.	The 0.20 value can be incremented by 0.36 before the sample median changes. A way to do this is to increment the 0.20 value by 0.01, compute for the median and if it doesn't change, continue to decrement. once it does change, decrement 0.01 from it.
+
+	36:
+		a.
+
+		b.
+
+		c.
+
+		d.
+
+Section  1.4 – Problems 44-48
 
 Section 2.1 – Problems 2-10
 

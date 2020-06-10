@@ -241,7 +241,7 @@
     },
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
-        "file_last_write": 1591728865.0,
+        "file_last_write": 1591747329.0,
         "definitions": [
             {
                 "usr": "c:@F@run#",
@@ -258,7 +258,7 @@
                 "parent_name": "",
                 "name": "charity",
                 "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
-                "line": 13,
+                "line": 16,
                 "column": 16
             },
             {
@@ -267,14 +267,14 @@
                 "parent_name": "",
                 "name": "test",
                 "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
-                "line": 21,
+                "line": 24,
                 "column": 6
             }
         ]
     },
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-        "file_last_write": 1591724296.0,
+        "file_last_write": 1591747275.0,
         "definitions": [
             {
                 "usr": "c:@N@tools@FT@>1#Tput_nums_in_vector#&>@N@std@ST>2#T#T@vector2t0.0>@N@std@ST>1#T@allocator1S2_#$@N@std@N@__cxx11@S@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@S@allocator>#C#v#",
@@ -367,12 +367,21 @@
                 "column": 10
             },
             {
+                "usr": "c:@N@tools@FT@>1#Tdeque_trimmed_mean#&>@N@std@ST>2#T#T@deque2t0.0>@N@std@ST>1#T@allocator1S2_#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "deque_trimmed_mean(deque<T> &, double)",
+                "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
+                "line": 120,
+                "column": 10
+            },
+            {
                 "usr": "c:@N@tools@FT@>1#Tvector_median#>@N@std@ST>2#T#T@vector2t0.0>@N@std@ST>1#T@allocator1S1_#S1_#",
                 "kind": 6,
                 "parent_name": "",
                 "name": "vector_median(vector<T>)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 120,
+                "line": 132,
                 "column": 5
             },
             {
@@ -381,7 +390,7 @@
                 "parent_name": "",
                 "name": "deque_median(deque<T>)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 128,
+                "line": 140,
                 "column": 5
             },
             {
@@ -390,7 +399,7 @@
                 "parent_name": "",
                 "name": "sum_vector(const vector<T> &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 137,
+                "line": 149,
                 "column": 10
             },
             {
@@ -399,7 +408,7 @@
                 "parent_name": "",
                 "name": "sum_deque(const deque<T> &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 145,
+                "line": 157,
                 "column": 10
             },
             {
@@ -408,7 +417,7 @@
                 "parent_name": "",
                 "name": "decrement_last_number_until_median_changes(vector<double> &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 152,
+                "line": 164,
                 "column": 10
             },
             {
@@ -417,7 +426,7 @@
                 "parent_name": "",
                 "name": "put_nums_in_deque(deque<T> &, std::__cxx11::string)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 160,
+                "line": 172,
                 "column": 8
             },
             {
@@ -426,7 +435,7 @@
                 "parent_name": "",
                 "name": "sample_variance(const vector<T> &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 171,
+                "line": 183,
                 "column": 10
             },
             {
@@ -435,7 +444,7 @@
                 "parent_name": "",
                 "name": "sample_standard_deviation(const vector<T> &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 182,
+                "line": 194,
                 "column": 10
             }
         ]

@@ -117,6 +117,18 @@ namespace tools {
   }
   
   template<typename T>
+  double deque_trimmed_mean(deque<T> &deq, double percent){
+    sort(deq.begin(), deq.end());
+    int num = floor((deq.size() * 10) / 100.0);
+    for (int i = 0; i < num; ++i)
+    {
+      deq.pop_back();
+      deq.pop_front();
+    }
+    return deque_mean(deq);
+  }
+  
+  template<typename T>
   T vector_median(vector<T> vec) {
     sort(vec.begin(), vec.end());
     if (vec.size() % 2 == 0) // if the vector has an even number of nums
@@ -149,7 +161,14 @@ namespace tools {
     return sum;
   }
   
-  double decrement_last_number_until_median_changes(vector<double> &vec) {
+  double increment_first_number_until_median_changes(vector<double> vec) {
+    double median = vector_median(vec);
+    while (vector_median(vec) == median)
+      vec[0] += 0.001; // add 0.001 to the largest value
+    return vec[0] -= 0.001;
+  }
+  
+  double decrement_last_number_until_median_changes(vector<double> vec) {
     double median = vector_median(vec);
     while (vector_median(vec) == median)
       vec[vec.size() - 1] -= 0.001; // add 0.001 to the largest value
