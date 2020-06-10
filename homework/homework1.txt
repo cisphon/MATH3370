@@ -68,12 +68,45 @@ Section 1.3 – Problems 34-38
 
 	36:
 		a.
+				32 | 55
+				33 | 49
+				34 |
+				35 | 6699
+				36 | 34469
+				37 | 03345
+				38 | 9
+				39 | 2347
+				40 | 23
+				41 | 
+				42 | 4
+
+			It suggests that the sample mean should be where there is the most digits on the right side of the stem plot. The sample median should be a little similar.
 
 		b.
+			Sample mean: 370.692
+			Sample median: 369.5
 
 		c.
+			It can approach positive infinity because it doesn't affect the sample median. It can also approach negative infinity because it doesn't affect the sample median.  
 
 		d.
+			The sample mean expressed in minutes is 6.178 minutes. Just divide every value in the array by 60 to convert the seconds into minutes, then find the mean of the minutes.
+			
+			The sample median expressed in minutes is 6.158 minutes. Do the same method before but then find the median of the minutes. 
+
+	37:
+			I would report the typical value as the mean. The mean is: 11.41
+
+	38:
+		a.
+			The reported values are: 120 125 140 130 115 120 110 130 135
+			Sort them in ascending order: 110 115 120 120 125 130 130 135 140
+			Compute the median: 125
+
+		b.
+			If the value was 127.6 rather than 127.4, it would be rounded up to 130 instead of 125.
+			With the new value in place, it will make the median go to 130 instead of 125.
+			The median is sensitive to small changes that change the reported values (if it's a middle value).
 
 Section  1.4 – Problems 44-48
 

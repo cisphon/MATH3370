@@ -129,7 +129,7 @@ namespace tools {
   }
   
   template<typename T>
-  T vector_median(vector<T> vec) {
+  double vector_median(vector<T> vec) {
     sort(vec.begin(), vec.end());
     if (vec.size() % 2 == 0) // if the vector has an even number of nums
       return (vec[vec.size() / 2 - 1] + vec[vec.size() / 2]) / 2.0;
@@ -168,11 +168,20 @@ namespace tools {
     return vec[0] -= 0.001;
   }
   
-  double decrement_last_number_until_median_changes(vector<double> vec) {
+  template <typename T>
+  double decrement_last_number_until_median_changes(vector<T> vec) {
     double median = vector_median(vec);
     while (vector_median(vec) == median)
       vec[vec.size() - 1] -= 0.001; // add 0.001 to the largest value
     return vec[vec.size() - 1] += 0.001;
+  }
+  
+  template <typename T>
+  double increment_last_number_until_median_changes(vector<T> vec) {
+    double median = vector_median(vec);
+    while (vector_median(vec) == median)
+      vec[vec.size() - 1] += 0.001; // add 0.001 to the largest value
+    return vec[vec.size() - 1] -= 0.001;
   }
   
   template<typename T>
