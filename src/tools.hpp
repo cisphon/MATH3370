@@ -197,10 +197,14 @@ namespace tools {
     return vec[vec.size() - 1] -= 0.001;
   }
   
-  
+  template<typename T>
+  T sample_range(vector<T> nums) {
+    sort(nums.begin(), nums.end());
+    return nums[nums.size() - 1] - nums[0];
+  }
   
   template<typename T>
-  double sample_variance(const vector<T> &nums) {
+  double sample_variance(const vector<T> nums) {
     double mean = vector_mean(nums);
     
     double sum = 0.0;
@@ -211,7 +215,7 @@ namespace tools {
   }
   
   template<typename T>
-  double sample_standard_deviation(const vector<T> &nums) {
+  double sample_standard_deviation(const vector<T> nums) {
     double mean = vector_mean(nums);
     
     double sum = 0.0;
@@ -219,5 +223,16 @@ namespace tools {
       sum += ((nums[i] - mean) * (nums[i] - mean));
     
     return sqrt(sum /= (nums.size() - 1));
+  }
+  
+  template<typename T>
+  vector<double> deviations_from_mean(const vector<T> nums) {
+    double mean = vector_mean(nums);
+    
+    vector<double> dev(nums.size());
+    for (int i = 0; i < nums.size(); ++i)
+      dev[i] = nums[i] - mean;
+    
+    return dev;
   }
 }

@@ -485,7 +485,106 @@ namespace homework {
           nums.clear();
           tools::put_nums_in_deque(nums, "mercury.txt");
           sort(nums.begin(), nums.end());
-          cout << tools::increment_first_number_until_median_changes(nums) - nums[0] << endl;
+          
+          cout << tools::increment_first_number_until_median_changes(nums)<< endl;
+        }
+      
+        void q36() {
+          vector<double> nums;
+          tools::put_nums_in_vector(nums, "oxygen.txt");
+          
+          // stem(nums);
+          
+          cout << tools::vector_mean(nums) << endl;
+          cout << tools::vector_median(nums) << endl;
+          
+          for (int i = 0; i < nums.size(); ++i)
+            nums[i] /= 60.0;
+          
+          cout << tools::vector_mean(nums) << endl;
+          cout << tools::vector_median(nums) << endl;
+        }
+      
+        void q37() {
+          vector<double> nums;
+          tools::put_nums_in_vector(nums, "snow.txt");
+          
+          cout << tools::vector_mean(nums) << endl;
+        }
+      
+        void q38() {
+          vector<double> nums;
+          tools::put_nums_in_vector(nums, "blood2.txt");
+          
+          vector<double> reported(nums.size());
+          for (int i = 0; i < reported.size(); ++i)
+            reported[i] = tools::round_nearest_x(nums[i], 5);
+          
+          cout << tools::vector_median(reported) << endl;
+          
+          replace(nums.begin(), nums.end(), 127.4, 127.6);
+          
+          for (int i = 0; i < reported.size(); ++i)
+            reported[i] = tools::round_nearest_x(nums[i], 5);
+          
+          cout << tools::vector_median(reported) << endl;
+        }
+      }
+    
+      namespace section4 {
+        void q44() {
+          vector<double> nums;
+          tools::put_nums_in_vector(nums, "chem2.txt");
+          
+          cout << tools::sample_range(nums) << endl;
+          
+          for (int i = 0; i < nums.size(); ++i)
+            nums[i] -= 180;
+          
+          cout << tools::sample_variance(nums) << endl;
+          
+          cout << tools::sample_standard_deviation(nums) << endl;
+          
+          nums.clear();
+          tools::put_nums_in_vector(nums, "chem2.txt");
+          
+          cout << tools::sample_variance(nums) << endl;
+        }
+      
+        void q45() {
+          vector<double> nums;
+          tools::put_nums_in_vector(nums, "modulus.txt");
+          
+          cout << tools::vector_mean(nums) << endl;
+          
+          vector<double> dev = tools::deviations_from_mean(nums);
+          tools::print_vector(dev);
+          
+          cout << tools::sample_variance(dev) << endl;
+          
+          cout << tools::sample_standard_deviation(dev) << endl;
+          
+          cout << tools::sample_variance(nums) << endl;
+          
+          vector<double> trans(nums);
+          for (int i = 0; i < trans.size(); ++i)
+            trans[i] -= 100;
+          
+          cout << tools::sample_variance(trans) << endl;
+          
+          cout << "They're the same." << endl;
+        }
+      
+        void q46() {
+          
+        }
+      
+        void q47() {
+          
+        }
+      
+        void q48() {
+          
         }
       }
     }
