@@ -40,6 +40,17 @@ namespace tools {
     in.close(); //Close the file stream
   }
   
+  template<typename T>
+  void put_nums_in_deque(deque<T> &nums, string filename) {
+    ifstream in("texts/" + filename, ios::in);
+    
+    T number;
+    while (in >> number) //Read number using extraction (>>) operator
+      nums.push_back(number);
+    
+    in.close(); //Close the file stream
+  }
+  
   void put_number_of_nums_in_vector(vector<int> &nums, const string file) {
     ifstream myfile("texts/" + file);
     
@@ -119,7 +130,9 @@ namespace tools {
   template<typename T>
   double deque_trimmed_mean(deque<T> &deq, double percent){
     sort(deq.begin(), deq.end());
-    int num = floor((deq.size() * 10) / 100.0);
+    
+    double val = (deq.size() * percent) / 100.0;
+    int num = floor(val);
     for (int i = 0; i < num; ++i)
     {
       deq.pop_back();
@@ -161,11 +174,11 @@ namespace tools {
     return sum;
   }
   
-  double increment_first_number_until_median_changes(vector<double> vec) {
-    double median = vector_median(vec);
-    while (vector_median(vec) == median)
-      vec[0] += 0.001; // add 0.001 to the largest value
-    return vec[0] -= 0.001;
+  double increment_first_number_until_median_changes(deque<double> deq) {
+    double median = deque_median(deq);
+    while (deque_median(deq) == median)
+      deq[0] += 0.001; // add 0.001 to the largest value
+    return deq[0];
   }
   
   template <typename T>
@@ -184,16 +197,7 @@ namespace tools {
     return vec[vec.size() - 1] -= 0.001;
   }
   
-  template<typename T>
-  void put_nums_in_deque(deque<T> &nums, string filename) {
-    ifstream in("texts/" + filename, ios::in);
-    
-    T number;
-    while (in >> number) //Read number using extraction (>>) operator
-      nums.push_back(number);
-    
-    in.close(); //Close the file stream
-  }
+  
   
   template<typename T>
   double sample_variance(const vector<T> &nums) {

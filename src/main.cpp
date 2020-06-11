@@ -23,5 +23,5 @@ auto test()
 // [[Rcpp::export]]
 void run()
 {
-  homework::webassign::run();
+  homework::discussions::one::section3::q35();
 }

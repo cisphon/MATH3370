@@ -443,7 +443,56 @@ namespace homework {
   
   namespace discussions {
     namespace one {
-    
+      namespace section3 {
+        void q34() {
+          deque<double> urban;
+          tools::put_nums_in_deque(urban, "urban.txt");
+          
+          sort(urban.begin(), urban.end());
+          
+          deque<double> farm;
+          tools::put_nums_in_deque(farm, "farm2.txt");
+          
+          sort(farm.begin(), farm.end());
+          
+          int n1 = urban.size(), n2 = farm.size();
+          
+          cout << "Urban mean: " << tools::deque_mean(urban) << endl;
+          cout << "Farm mean: " << tools::deque_mean(farm) << endl;
+          
+          cout << "Urban median: " << tools::deque_median(urban) << endl;
+          cout << "Farm median: " << tools::deque_median(farm) << endl;
+          
+          urban.pop_front(); urban.pop_back();
+          farm.pop_front(); farm.pop_back();
+          cout << "Trimmed Urban mean: " << tools::deque_mean(urban) << endl;
+          cout << "Trimmed Farm mean: " << tools::deque_mean(farm) << endl;
+          
+          cout << "Trimming percentage for urban: "<< (1.0 / n1) * 100 << endl;
+          cout << "Trimming percentage for farm: " << (1.0 / n2) * 100 << endl;
+        }
+      
+        void q35() {
+          deque<double> nums;
+          tools::put_nums_in_deque(nums, "mercury.txt");
+          sort(nums.begin(), nums.end());
+          
+          cout << "Sample mean: " << tools::deque_mean(nums) << endl;
+          cout << "Sample median: " << tools::deque_median(nums) << endl;
+          
+          cout << "Trimmed mean: " << tools::deque_trimmed_mean(nums, 10)<<endl;
+          
+          nums.clear();
+          tools::put_nums_in_deque(nums, "mercury.txt");
+          sort(nums.begin(), nums.end());
+          cout << tools::increment_first_number_until_median_changes(nums) - nums[0] << endl;
+        }
+      }
+    }
+  
+    void run()
+    {
+      
     }
   }
 }
