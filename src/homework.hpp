@@ -576,11 +576,49 @@ namespace homework {
         }
       
         void q46() {
+          vector<double> cooler;
+          tools::put_nums_in_vector(cooler, "cooler.txt");
+          cout << tools::vector_mean(cooler) << endl;
+          cout << tools::vector_median(cooler) << endl;
+          cout << "There is no mode." << endl;
           
+          vector<double> control;
+          tools::put_nums_in_vector(control, "control.txt");
+          cout << tools::vector_mean(control) << endl;
+          cout << tools::vector_median(control) << endl;
+          cout << "There is no mode." << endl;
+          
+          
+          vector<double> warmer;
+          tools::put_nums_in_vector(warmer, "warmer.txt");
+          cout << tools::vector_mean(warmer) << endl;
+          cout << tools::vector_median(warmer) << endl;
+          cout << "There is no mode." << endl;
+          
+          cout << "Cooler mean < Control mean < Warmer mean" << endl;
+          cout << "Cooler median < Control median < Warmer Median" << endl;
+          
+          
+          cout << tools::sample_standard_deviation(cooler) << endl;
+          cout << tools::sample_standard_deviation(control) << endl;
+          cout << tools::sample_standard_deviation(warmer) << endl;
+          
+          cout << "Cooler std. dev < Control std. dev < Warmer std. dev"<< endl;
         }
       
         void q47() {
+          vector<double> nums;
+          tools::put_nums_in_vector(nums, "wine.txt");
+          cout << tools::vector_mean(nums) << endl;
+          cout << tools::vector_median(nums) << endl;
+          cout << "There is no mode." << endl;
           
+          cout << tools::sample_variance(nums) << endl;
+          
+          for (int i = 0; i < nums.size(); ++i)
+            nums[i] -= 13.0;
+          
+          cout << tools::sample_variance(nums) << endl;
         }
       
         void q48() {

@@ -120,6 +120,11 @@ namespace tools {
   }
   
   template<typename T>
+  void vector_mode(const vector<T> &vec) {
+    
+  }
+  
+  template<typename T>
   double deque_mean(const deque<T> &deq) {
     double sum = 0.0;
     for (int i = 0; i < deq.size(); ++i)

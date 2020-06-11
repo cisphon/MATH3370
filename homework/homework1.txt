@@ -134,15 +134,22 @@ Section  1.4 – Problems 44-48
 	  d.  The sample variance of the transformed values is 0.482. They are the same.
 	  
 	46:
-    a.
-    b.
+    a.  Cooler Mean (1.706) < Control Mean (1.75273) < Warmer Mean (1.07643)
+        Cooler Median (1.76) < Control Median (1.9) < Warmer Median (2.305)
+        There are no modes for Colloer, Control, or Warmer.
+    
+    b.  Cooler std. dev (0.400835) < Control std. dev (0.531321) < Warmer Median std. dev (0.777873).
+    
     c.
+    
     d.
     
   47:
-    a.
-    b.
-    c.
+    a.  Sample mean (14.88) < Sample Median (14.7). There is no mode.
+    
+    b.  Sample variance = 0.837333. To compute the sample variance, simply iterate through the numbers, subracting the median from it and squaring the quantity. Then you divide it my n-1, where n is the size of the array.
+    
+    c.  Sample variance = 0.837333. Before computing the sample variance, subract 13 from every number in the array and then use the sample variance algorithm to compute for it.
 
   48:
     a.
