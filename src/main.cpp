@@ -4,7 +4,7 @@
 using namespace Rcpp;
 
 // [[Rcpp::export]]
-auto run()
+auto test()
 {
   vector<double> nums;
   tools::put_nums_in_vector(nums, "blood2.txt");
@@ -20,16 +20,8 @@ auto run()
   return fives;
 }
 
-// [[Rcpp::export]] 
-vector<double> charity()
+// [[Rcpp::export]]
+void run()
 {
-  vector<double> nums;
-  tools::put_nums_in_vector(nums, "charity.txt");
-  return nums;
-}
-
-// [[Rcpp::export]] 
-void test()
-{
-
+  homework::webassign::run();
 }
