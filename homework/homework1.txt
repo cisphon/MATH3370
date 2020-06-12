@@ -206,10 +206,35 @@ Section 2.1 – Problems 2-10
         B intersect C = {FFFV,FFVF,FVFF,VFFF} intersect {FFFF,VVVV}
         = {null} (there are no values in common).
   5.
-    a.  
-    b.
-    c.
-    d.
+    a.  You can use 3 nested for loops to express the sample space:
+        for (int i = 1; i <= 3; ++i)
+          for (int j = 1; j <= 3; ++j)
+            for (int k = 1; k <= 3; ++k)
+                cout << i << ' ' << j << ' ' << k << endl;
+                
+        {(1,1,1),(1,1,2),(1,1,3),(1,2,1),(1,2,2),(1,2,3),(1,3,1),
+         (1,3,2),(1,3,3),(2,1,1),(2,1,2),(2,1,3),(2,2,1),(2,2,2),
+         (2,2,3),(2,3,1),(2,3,2),(2,3,3),(3,1,1),(3,1,2),(3,1,3),
+         (3,2,1),(3,2,2),(3,2,3),(3,3,1),(3,3,2),(3,3,3).
+         
+    b.  If they go to the same station, then they are the same values:
+        {(1,1,1), (2,2,2), (3,3,3)}
+    
+    c.  The possible outcomes that they go to different stations can be
+        expressed in the c++ code below:
+        
+        int p[] = {1, 2, 3};
+  
+        do {
+          cout << p[0] << ' ' << p[1] << ' ' << p[2] << endl;
+        } while (next_permutation(p, p+3));
+        
+        Which prints out...
+        {(1,2,3),(1,3,2),(2,1,3),(2,3,1),(3,1,2),(3,2,1)}
+        
+    d.  If none of them go to 2, then look through the combinations that do not have a 2.
+    
+        {(1,1,1),(1,1,3),(1,3,1),(1,3,3),(3,1,1),(3,1,3),(3,3,1),(3,3,3)}
   6.
     a.
     b.

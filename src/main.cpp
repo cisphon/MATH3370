@@ -23,11 +23,20 @@ auto test()
 // [[Rcpp::export]]
 void perm()
 {
-  int ass[] = {1, 2, 3, 4};
+  int p[] = {1, 2, 3};
   
   do {
-    cout << ass[0] << ' ' << ass[1] << ' ' << ass[2] << ' ' << ass[3] << endl;
-  } while (next_permutation(ass, ass+4));
+    cout << p[0] << ' ' << p[1] << ' ' << p[2] << endl;
+  } while (next_permutation(p, p+3));
+}
+
+// [[Rcpp::export]]
+void something()
+{
+  for (int i = 1; i <= 3; ++i)
+    for (int j = 1; j <= 3; ++j)
+      for (int k = 1; k <= 3; ++k)
+        cout << i << ' ' << j << ' ' << k << endl;
 }
 
 // [[Rcpp::export]]
