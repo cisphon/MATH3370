@@ -158,25 +158,55 @@ Section  1.4 – Problems 44-48
 
 Section 2.1 – Problems 2-10
   2.
-    a.  
-    b.
-    c.
-    d.
-    e.
+    a.  Set A = {RRR, LLL, SSS}. They do not change.
+    
+    b.  Set B = {RLS, RSL, LRS, LSR, SLR, SRL}. There are no duplicate per outcome
+    
+    c.  Set C = {RRL, RRS, RLR, RSR, LRR, SRR}. 
+    d.  Set D = {RRL, RRS, RLR, RSR, LRR, SRR, LLR, LLS, LRL,
+                 LSL, RLL, SLL, SSL, SSR, SLS, SRS, LSS, RSS}
+    e.  Set D'= {RRR, LLL, SSS, RLS, RSL, LRS, LSR, SRL, SLR}
+        C union D = {RRL, RRS, RLR, RSR, LRR, SRR, LLR, LLS, LRL,
+                     LSL, RLL, SLL, SSR, SRS, SLS, RSS, LSS}
+        C intersect D = C = {RRL, RRS, RLR, RSR, LRR, SRR}
+  
   3.
-    a.
-    b.
-    c.
-    d.
+    a.  For A, write down all the combinations where one function is nonfunctioning and two components are functioning.
+        A = {FSS, SFS, SSF}. It's simply a matter of moving one F across SS.
+        
+    b.  A + {SSS} = {FSS, SFS, SSF, SSS}
+    c.  The outcomes where the system functions are: C = {SSF, SFS, SSS}.
+        As long as function values can get to the other side. It reminds me of an OR boolean gate.
+        
+    d.  This problem can be approached as binary. Just count from [0, 7] using true and false and then remove the values of C. 
+        C' = All permutations - C 
+        = {FFF, FFS, FSF, FSS, SFF, SFS, SSF, SSS} - {SSF, SFS, SSS}.
+        = {FFF, FFT, FSF, FSS, SFF}.
+  
   4.
-    a.
-    b.
-    c.
-    d.
-    e.
-    f.
+    a.  This problem can also be approached like binary. Count from [0,15] using F as false and V as true.
+        {FFFF,FFFV,FFVF,FFVV,FVFF,FVFV,FVVF,FVVV,
+         VFFF,VFFV,VFVF,VFVV,VVFF,VVFV,VVVF,VVVV}
+    
+    b.  Just use the 16 outcomes to count which ones have 3 Fs
+        {FFFV,FFVF,FVFF,VFFF}
+    
+    c.  If all four mortgages are the same they all have the same F or V value.
+        {FFFF,VVVV}
+    
+    d.  {FFFF,FFFV,FFVF,FVFF,VFFF}, just iterate V over FFF and append FFFF.
+    
+    e.  C union D = {FFFF, FFFV, FFVF, FVFF, VFFF, VVVV}
+        C interect D = {FFFF,VVVV} intersect {FFFF, FFFV, FFVF, FVFF, VFFF}
+        = {FFFF} (the only value in common).
+    
+    f.  B union C = {FFFV,FFVF,FVFF,VFFF} union {FFFF,VVVV}
+        = {FFFV, FFVF, FVFF, VFFF, FFFF, VVVV}
+        
+        B intersect C = {FFFV,FFVF,FVFF,VFFF} intersect {FFFF,VVVV}
+        = {null} (there are no values in common).
   5.
-    a.
+    a.  
     b.
     c.
     d.
