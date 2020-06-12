@@ -274,14 +274,27 @@ Section 2.2 – Problems 12-22
       The probability that 2 bills must be first a $10 bill is:
       1 - (5/15) = 1 - 1/3 = 2/3.
   19.
-    a.  
-    b.  
+    a.  P(selected joint was defective) = (10000 - 1159) / 10000 = 0.8841
+    b.  P(number of joints judged defective by both) = 724 + 751 - 1159 = 316
+        The probability = # of joints judged defective by only A / # joints.
+        = (751 - 316) / 10000 = 0.0435
   20.
-    a.
-    b.
+    a.  Let A1,A1,A3 denote the day, swing, and night value.
+        Let B1,B2 denote unsafe conditions and unrelated to conditions.
+        
+        Simple events: {(A1,B1),(A1, B2),(A2,B1),(A2,B2),(A3,B1),(A3,B2)}
+    
+    b.  P(B1) = P(A1,B1) + (A2, B1) + P(A3,B1)
+        = 0.1 + 0.08 + 0.05
+        = 0.23
+        The probability of an accident from unsafe conditions is 0.23.
     c.
+        P(A1') = P(A2, B1) + P(A2, B2) + P(A3, B1) + P(A3, B2)
+        = 0.08 + 0.2 + 0.05 + 0.22
+        = 0.55
+        The probability of an accident did not occur on the day shift is 0.55.
   21.
-    a.
+    a.  
     b.
     c.
     d.
