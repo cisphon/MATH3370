@@ -3,7 +3,7 @@ L20407623
 
 MATH 3370 F
 
-I ended up doing a lot of my homework with Rcpp. It's basically an extension for R that allows me to use C++ code to do whatever I want. I basically programmed a lot of the functions like trimmed mean and standard deviation in C++ and used them in R to assist myself while doing these homework assignments. Check out the src folder on my github link below, which contains my code and the texts folder which contains the data in .txt files.
+I ended up doing a lot of my homework with Rcpp. It's basically an extension for R that allows me to use C++ code to do whatever I want. I basically programmed a lot of the functions like trimmed mean, mean, median, and standard deviation in C++ and used them in R to assist myself while doing these homework assignments. Check out the src folder on my github link below, which contains my code and the texts folder which contains the data in .txt files. 
 
 Here's my repository I used to work on my homework:
 https://github.com/cisphon/RStatistics
@@ -140,9 +140,9 @@ Section  1.4 – Problems 44-48
     
     b.  Cooler std. dev (0.400835) < Control std. dev (0.531321) < Warmer Median std. dev (0.777873).
     
-    c.
+    c.	
     
-    d.
+    d.	See the folder I uploaded.
     
   47:
     a.  Sample mean (14.88) < Sample Median (14.7). There is no mode.

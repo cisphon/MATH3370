@@ -621,7 +621,7 @@ namespace homework {
           cout << tools::sample_variance(nums) << endl;
         }
       
-        void q48() {
+        auto q48() {
           vector<double> urban;
           tools::put_nums_in_vector(urban, "urban.txt");
           cout << tools::sample_standard_deviation(urban) << endl;
@@ -631,6 +631,7 @@ namespace homework {
           cout << tools::sample_standard_deviation(farm) << endl;
           
           cout << "Urban std. dev > 3x than Farm std. dev" << endl;
+          return farm;
         }
       }
     }

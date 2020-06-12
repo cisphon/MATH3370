@@ -23,11 +23,11 @@ auto test()
 // [[Rcpp::export]]
 void perm()
 {
-  int p[] = {1, 2, 3};
+  int ass[] = {1, 2, 3};
   
   do {
-    cout << p[0] << ' ' << p[1] << ' ' << p[2] << endl;
-  } while (next_permutation(p, p+3));
+    cout << ass[0] << ' ' << ass[1] << ' ' << ass[2] << endl;
+  } while (next_permutation(ass, ass+3));
 }
 
 // [[Rcpp::export]]
@@ -40,11 +40,7 @@ void something()
 }
 
 // [[Rcpp::export]]
-void run()
+auto run()
 {
-  vector<int> nums = {3124,3142,4123,4132,2314,2341,
-                      3214,3241,2413,2431,4213,4231};
-  sort(nums.begin(), nums.end());
-  tools::print_vector(nums);
-  //homework::discussions::one::section4::q48();
+  return homework::discussions::one::section4::q48();
 }
