@@ -3,7 +3,7 @@ L20407623
 
 MATH 3370 F
 
-I ended up doing a lot of my homework with Rcpp. It's basically an extension for R that allows me to use C++ code to do whatever I want. I basically programmed a lot of the functions like trimmed mean and standard deviation in C++ and used them in R to assist myself while doing these homework assignments. Check out the src folder which contains my code and the texts folder which contains the data in .txt files.
+I ended up doing a lot of my homework with Rcpp. It's basically an extension for R that allows me to use C++ code to do whatever I want. I basically programmed a lot of the functions like trimmed mean and standard deviation in C++ and used them in R to assist myself while doing these homework assignments. Check out the src folder on my github link below, which contains my code and the texts folder which contains the data in .txt files.
 
 Here's my repository I used to work on my homework:
 https://github.com/cisphon/RStatistics
@@ -260,14 +260,22 @@ Section 2.2 – Problems 12-22
     c.  The probabilty that C is ranked first and D is last is 1/6 because there is only one case where it happens: CPD.
   
   17.
-    a.  
-    b.
-    c.
-    d.
-  18.
+    a.  Because P(A) = 0.30 and P(B) = 0.50. My smart-ass answer aside, there are typically more than one software packages that someone can download.
+    b.  P(A)' = 1 - P(A) = 1 - 0.30 = 0.70
+    c.  P(A union B) = P(A) + P(B) = 0.3 + 0.5 = 0.8
+    d.  Use de morgan's law for boolean negation:
+        A' intersect B' = (A union B)'
+        
+        P(A' intersect B') = P(A union B)'
+        = 1 - P(A union B)
+        = 1 - (0.8)
+        = 0.2
+  18. Given 15 bills and 5 of them are $10 bills, the ratio is 5/15.
+      The probability that 2 bills must be first a $10 bill is:
+      1 - (5/15) = 1 - 1/3 = 2/3.
   19.
-    a.
-    b.
+    a.  
+    b.  
   20.
     a.
     b.
