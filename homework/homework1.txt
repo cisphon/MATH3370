@@ -294,14 +294,29 @@ Section 2.2 – Problems 12-22
         = 0.55
         The probability of an accident did not occur on the day shift is 0.55.
   21.
-    a.  
-    b.
-    c.
-    d.
-    e.
-    f.
+    a.  0.10.
+    
+    b.  A low auto deductible = .04 + .06 + .05 + .03 = .18
+        A low homeowner's deductible = .06 + .10 + .03 = .19
+    
+    c.  In the same category (diagonal): .06 + .20 + .15 = .41
+    
+    d.  Just do the complement of question c: 1 - 0.41 = 0.59 
+    
+    e.  Sum all of the numbers on the left side: 
+        P(low auto) = .18, p(low homeowner's) = 0.19 - P(L,L)
+        = 0.18 + 0.19 - 0.06
+        = 0.31
+    
+    f.  Just do the complement of question e: 1 - 0.31 = 0.69
   22.
-    a.
-    b.
-    c.
+    a.  P(stopping at both signals) = P(A,B)
+        P(A union B) = P(A) + P(B) - P(A, B)
+        P(A, B) = P(A) + P(B) - P(A union B)
+        = 0.4 + 0.5 - 0.7 
+        = 0.2
+    
+    b.  P(A, B') = P(A) - P(A,B) = 0.4 - 0.2 = 0.2  
+        
+    c.  P(A, B') + P(A', B) = 0.2 + P(B) - P(A,B) = 0.2 + 0.5 - 0.2 = 0.5  
     
