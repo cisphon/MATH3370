@@ -21,7 +21,21 @@ auto test()
 }
 
 // [[Rcpp::export]]
+void perm()
+{
+  char ass[] = {'C', 'D', 'P'};
+  
+  do {
+    cout << ass[0] << ' ' << ass[1] << ' ' << ass[2] << endl;
+  } while (next_permutation(ass, ass+3));
+}
+
+// [[Rcpp::export]]
 void run()
 {
-  homework::discussions::one::section4::q47();
+  vector<int> nums = {3124,3142,4123,4132,2314,2341,
+                      3214,3241,2413,2431,4213,4231};
+  sort(nums.begin(), nums.end());
+  tools::print_vector(nums);
+  //homework::discussions::one::section4::q48();
 }

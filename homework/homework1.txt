@@ -152,10 +152,135 @@ Section  1.4 – Problems 44-48
     c.  Sample variance = 0.837333. Before computing the sample variance, subract 13 from every number in the array and then use the sample variance algorithm to compute for it.
 
   48:
-    a.
-    b.
+    a.  Urban std. dev (22.2996) is more than 3x bigger than Farm std. dev (6.08767).
+    b.  
     c.
 
 Section 2.1 – Problems 2-10
-
+  2.
+    a.  
+    b.
+    c.
+    d.
+    e.
+  3.
+    a.
+    b.
+    c.
+    d.
+  4.
+    a.
+    b.
+    c.
+    d.
+    e.
+    f.
+  5.
+    a.
+    b.
+    c.
+    d.
+  6.
+    a.
+    b.
+    c.
+    d.
+  7.
+    a.
+    b.
+  8.
+    a.
+    b.
+    c.
+    d.
+    e.
+  9.
+    a.
+    b.
+  10.
+    a.
+    b.
+    
 Section 2.2 – Problems 12-22
+
+  12.
+    a.  It is not possible because P(A intersect B) <= P(A) and P(A union B) <= P(B).
+      
+    b.  P(A union B) = P(A) + P(B) - P(A intersect B) = 0.6 + 0.4 - 0.3 = 0.7
+    c.  P(A union B)' = 1 - P(A union B) = 1 - 0.7 = 0.3
+    d.  P(A intersect B') = P(A) - P(A intersect B) = 0.6 - 0.3 = 0.3
+    e.  P(A) + P(B) - 2P(A intersect B) = 0.6 + 0.4 - 2 * 0.3 = 0.4
+  
+  13.
+    a.  A1 union A2 = P(A1) + P(A2) - P(A1 intersect A2) 
+        = 0.22 + 0.25 - 0.11
+    
+    b.  P(A1' intersect A2') = P(A1 union A2)' 
+        = 1 - P(A1 union A2) = 1 - 0.36 = 0.64
+        
+    c.  P(A union B union C) 
+        = P(A) + P(B) + P(C) - P(A intersect B) - P(C intersect B) - P(A intersect C) - P(A intersect B intersect C)
+        = 0.22 + 0.25 + 0.28 - 0.11 - 0.05 - 0.07 + 0.01 = 0.51
+    
+    d.  A1' intersect A2' intersect A3' = (A1 union A2 union A3)'
+        = 1 - P(A1 union A2 union A3)
+        = 1 - 0.51 = 0.49
+        
+    e.  P(A1' intersect A2' intersect A3')
+        = P(A3) - (P(A1 intersect A3) + P(A2 intersect A3) - P(A1' intersect A2' intersect A3))
+        = 0.28 - (0.05 + 0.07 - 0.01)
+        = 0.17
+        
+    f.  P((A1' intersect A2') union A3) = P(A1' intersect A2') + P(A3) - P(A1' intersect A2' intersect A3)
+        = P(A1' intersect A2') + P(A3) - P(A3)
+        = P(A1' intersect A2')
+        = 1 - P(A1 union A2)
+        = 1 - 0.36 = 0.64
+  14.
+    a.  P(A intersect B) = P(A) + P(B) - P(A union B)
+        = 0.55 + 0.45 - 0.70
+        = 1.00 - 0.70 = 0.30
+    b.  P(A union B)' = 1 - P(A intersect B)
+        = 1 - 0.70 = 0.30
+  15.
+    a.  Simply take the complement of the given P(A)
+        1 - P(A) = 1 - 0.428 = 0.572
+    
+    b.  P(A) = 1 - P(B)
+        = 1 - (P(C) + P(D))
+        = 1 - (0.116 + 0.005)
+        = 1 - 0.121
+        = 0.879
+  16.
+    a.  There is no given information to work from.
+    
+    b.  Here are the permutations of CDP = {CDP, CPD, DCP, DPC, PCD, PDC}
+        The probability that C is ranked first is 2/6 because of CDP and CPD.
+    
+    c.  The probabilty that C is ranked first and D is last is 1/6 because there is only one case where it happens: CPD.
+  
+  17.
+    a.  
+    b.
+    c.
+    d.
+  18.
+  19.
+    a.
+    b.
+  20.
+    a.
+    b.
+    c.
+  21.
+    a.
+    b.
+    c.
+    d.
+    e.
+    f.
+  22.
+    a.
+    b.
+    c.
+    

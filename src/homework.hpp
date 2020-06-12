@@ -622,7 +622,15 @@ namespace homework {
         }
       
         void q48() {
+          vector<double> urban;
+          tools::put_nums_in_vector(urban, "urban.txt");
+          cout << tools::sample_standard_deviation(urban) << endl;
           
+          vector<double> farm;
+          tools::put_nums_in_vector(farm, "farm2.txt");
+          cout << tools::sample_standard_deviation(farm) << endl;
+          
+          cout << "Urban std. dev > 3x than Farm std. dev" << endl;
         }
       }
     }
