@@ -13,9 +13,14 @@
 #include <bitset>
 #include <chrono>
 
+#include <boost/multiprecision/cpp_int.hpp>
+#include <boost/multiprecision/cpp_dec_float.hpp>
+
+using boost::multiprecision::cpp_int;
+using boost::multiprecision::cpp_dec_float_100;
 using namespace std;
 
-namespace tools {
+namespace ts {
   template<typename T>
   void put_nums_in_vector(vector<T> &nums, string filename) {
     ifstream in("texts/" + filename, ios::in);
@@ -92,8 +97,7 @@ namespace tools {
   }
   
   template<typename T>
-  void print_2D_vector(const vector<vector<T>> &matrix)
-  {
+  void print_2D_vector(const vector<vector<T>> &matrix) {
     for (int i = 0; i < matrix.size(); ++i)
     {
       for (int j = 0; j < matrix[i].size(); ++j)
@@ -161,7 +165,6 @@ namespace tools {
       return (deq[deq.size() / 2 - 1] + deq[deq.size() / 2]) / 2.0;
     return deq[deq.size() / 2];
   }
-  
   
   template<typename T>
   double sum_vector(const vector<T> &nums) {
@@ -239,5 +242,20 @@ namespace tools {
       dev[i] = nums[i] - mean;
     
     return dev;
+  }
+
+  cpp_int factorial(int number)
+  {
+    cpp_int num = 1;
+    for (int i = 1; i <= number; ++i)
+      num *= i;
+    return num;
+  }
+  
+  cpp_int choose(int n, int k)
+  {
+    cpp_int numerator = factorial(n);
+    cpp_int denominator = factorial(k) * factorial(n - k);
+    return numerator / denominator;
   }
 }
