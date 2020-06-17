@@ -17,7 +17,7 @@
 #include <boost/multiprecision/cpp_dec_float.hpp>
 
 using boost::multiprecision::cpp_int;
-using boost::multiprecision::cpp_dec_float_100;
+using cpp_float = boost::multiprecision::cpp_dec_float_100;
 using namespace std;
 
 namespace ts {

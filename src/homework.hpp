@@ -428,15 +428,16 @@ namespace hw {
         void d() {
           cpp_int top = ts::ch(7, 2)*ts::ch(9, 2)*ts::ch(13, 2);
           cpp_int bottom = ts::ch(29, 6);
-          cout << cpp_dec_float_100(top) / cpp_dec_float_100(bottom) << endl;
+          cout << cpp_float(top) / cpp_float(bottom) << endl;
         }
       
         void e() {
           cpp_int top = ts::ch(7, 6)+ts::ch(9, 6)+ts::ch(13, 6);
           cpp_int bottom = ts::ch(29, 6);
-          cout << cpp_dec_float_100(top) / cpp_dec_float_100(bottom) << endl;
+          cout << cpp_float(top) / cpp_float(bottom) << endl;
         }
       }
+      
       namespace sec2 {
         /*
         vector<string> rec = {"Kenwood", "Onkyo", "Sony", "Sherwood"};
@@ -483,10 +484,47 @@ namespace hw {
         }
       
         void e() {
-          cout << cpp_dec_float_100(one_sony)/cpp_dec_float_100(total) << endl;
+          cout << cpp_float(one_sony)/cpp_float(total) << endl;
           
-          
+          cout << "UHHH" << endl;
         }
+      }
+    
+      namespace sec3 {
+        int day = 10, swing = 8, grave = 6;
+        
+        cpp_float same_shift = 0;
+        void a() {
+          cout << cpp_float(ts::ch(day, 3)) / 
+            cpp_float(ts::ch(day+swing+grave,3)) << endl;
+        }
+        
+        void b() {
+          cpp_float denominator = cpp_float(ts::ch(day+swing+grave, 5));
+          cpp_float p = 
+            cpp_float(ts::ch(day, 5))/denominator
+          + cpp_float(ts::ch(swing, 6))/denominator
+          + cpp_float(ts::ch(grave, 6))/denominator;
+          
+          same_shift = p;
+          cout << same_shift << endl;
+        }
+        
+        void c() {
+          cout << 1 - same_shift << endl;
+        }
+        
+        void d() {
+          cout << "UHH" << endl;
+        }
+      }
+    
+      namespace sec4 {
+        
+      }
+    
+      void run() {
+        
       }
     }
   
