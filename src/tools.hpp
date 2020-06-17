@@ -224,13 +224,7 @@ namespace ts {
   
   template<typename T>
   double sample_standard_deviation(const vector<T> nums) {
-    double mean = vector_mean(nums);
-    
-    double sum = 0.0;
-    for (int i = 0; i < nums.size(); ++i)
-      sum += ((nums[i] - mean) * (nums[i] - mean));
-    
-    return sqrt(sum /= (nums.size() - 1));
+    return sqrt(sample_variance(nums));
   }
   
   template<typename T>
