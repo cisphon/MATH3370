@@ -408,33 +408,84 @@ namespace hw {
       namespace sec1 {
         void a() {
           int z = 7;
-          cpp_int perms = ts::factorial(z) / ts::factorial(z - 3);
+          cpp_int perms = ts::fact(z) / ts::fact(z - 3);
           cout << perms << endl;
         }
       
         void b() {
           int t = 29;
           int b = 6;
-          cpp_int top = ts::factorial(t);
-          cpp_int bottom = ts::factorial(b) * ts::factorial(t - b);
+          cpp_int top = ts::fact(t);
+          cpp_int bottom = ts::fact(b) * ts::fact(t - b);
     
           cout << top / bottom << endl;
         }
       
         void c() {
-          cout << ts::choose(7, 2)*ts::choose(9, 2)*ts::choose(13, 2)<< endl;
+          cout << ts::ch(7, 2)*ts::ch(9, 2)*ts::ch(13, 2)<< endl;
         }
         
         void d() {
-          cpp_int top = ts::choose(7, 2)*ts::choose(9, 2)*ts::choose(13, 2);
-          cpp_int bottom = ts::choose(29, 6);
+          cpp_int top = ts::ch(7, 2)*ts::ch(9, 2)*ts::ch(13, 2);
+          cpp_int bottom = ts::ch(29, 6);
           cout << cpp_dec_float_100(top) / cpp_dec_float_100(bottom) << endl;
         }
       
         void e() {
-          cpp_int top = ts::choose(7, 6)+ts::choose(9, 6)+ts::choose(13, 6);
-          cpp_int bottom = ts::choose(29, 6);
+          cpp_int top = ts::ch(7, 6)+ts::ch(9, 6)+ts::ch(13, 6);
+          cpp_int bottom = ts::ch(29, 6);
           cout << cpp_dec_float_100(top) / cpp_dec_float_100(bottom) << endl;
+        }
+      }
+      namespace sec2 {
+        /*
+        vector<string> rec = {"Kenwood", "Onkyo", "Sony", "Sherwood"};
+        vector<string> cdp = {"Onkyo", "Pioneer", "Sony", "Technics"};
+        vector<string> spk = {"Boston", "Infinity"};
+        vector<string> cas = {"Onkyo", "Sony", "Teac", "Technics"};
+        */
+        vector<string> rec = {"Kenwood","Onkyo","Pioneer","Sony","Sherwood"};
+        vector<string> cdp = {"Onkyo","Pioneer","Sony","Technics"};
+        vector<string> spk = {"Boston","Infinity", "Polk"};
+        vector<string> cas = {"Onkyo", "Sony", "Teac", "Technics"};
+        
+        int w = rec.size(), x = cdp.size(), y = spk.size(), z = cas.size();
+        cpp_int total = 0, without_sony = 0, one_sony = 0;
+        
+        void a() {  
+          total = ts::ch(w, 1) * ts::ch(x, 1) * ts::ch(y, 1) * ts::ch(z, 1);
+          cout << total << endl;
+        }
+      
+        void b() {
+          int rec_c = count(rec.begin(), rec.end(), "Sony");
+          int cdp_c = count(cdp.begin(), cdp.end(), "Sony");
+          
+          cout << ts::ch(rec_c, 1) * ts::ch(cdp_c, 1)
+            * ts::ch(y, 1) * ts::ch(z, 1) << endl;
+        }
+      
+        void c() {
+          int rec_wo_sony = w - count(rec.begin(), rec.end(), "Sony");
+          int cdp_wo_sony = x - count(cdp.begin(), cdp.end(), "Sony");
+          int spk_wo_sony = y - count(spk.begin(), spk.end(), "Sony");
+          int cas_wo_sony = z - count(cas.begin(), cas.end(), "Sony");
+        
+          without_sony = ts::ch(rec_wo_sony, 1) * ts::ch(cdp_wo_sony, 1)
+            * ts::ch(spk_wo_sony, 1) * ts::ch(cas_wo_sony, 1);
+        
+          cout << without_sony << endl;
+        }
+      
+        void d() {
+          one_sony = total - without_sony;
+          cout << one_sony << endl;
+        }
+      
+        void e() {
+          cout << cpp_dec_float_100(one_sony)/cpp_dec_float_100(total) << endl;
+          
+          
         }
       }
     }

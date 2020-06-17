@@ -238,7 +238,8 @@ namespace ts {
     return dev;
   }
 
-  cpp_int factorial(int number)
+  // factorial
+  cpp_int fact(int number)
   {
     cpp_int num = 1;
     for (int i = 1; i <= number; ++i)
@@ -246,10 +247,11 @@ namespace ts {
     return num;
   }
   
-  cpp_int choose(int n, int k)
+  // choose
+  cpp_int ch(int n, int k)
   {
-    cpp_int numerator = factorial(n);
-    cpp_int denominator = factorial(k) * factorial(n - k);
+    cpp_int numerator = fact(n);
+    cpp_int denominator = fact(k) * fact(n - k);
     return numerator / denominator;
   }
 }
