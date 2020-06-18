@@ -250,8 +250,12 @@ namespace ts {
   // choose
   cpp_int ch(int n, int k)
   {
-    cpp_int numerator = fact(n);
-    cpp_int denominator = fact(k) * fact(n - k);
-    return numerator / denominator;
+    return fact(n) / (fact(k) * fact(n - k));
+  }
+  
+  // permutation
+  cpp_int perm(int n, int k)
+  {
+    return fact(n) / fact(n - k);
   }
 }

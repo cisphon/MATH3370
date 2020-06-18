@@ -486,41 +486,80 @@ namespace hw {
         void e() {
           cout << cpp_float(one_sony)/cpp_float(total) << endl;
           
+          
           cout << "UHHH" << endl;
         }
       }
     
       namespace sec3 {
         int day = 10, swing = 8, grave = 6;
+      
+        int w = 3;
         
         cpp_float same_shift = 0;
         void a() {
-          cout << cpp_float(ts::ch(day, 3)) / 
-            cpp_float(ts::ch(day+swing+grave,3)) << endl;
+          cout << ts::ch(day, w) << endl;
+          
+          cpp_float p = cpp_float(ts::ch(day, w)) / 
+            cpp_float(ts::ch(day+swing+grave,w));
+          
+          cout << ts::round_x_decimal_places(p, 4) << endl;
         }
         
         void b() {
-          cpp_float denominator = cpp_float(ts::ch(day+swing+grave, 5));
+          cpp_float denominator = cpp_float(ts::ch(day+swing+grave, w));
           cpp_float p = 
-            cpp_float(ts::ch(day, 5))/denominator
-          + cpp_float(ts::ch(swing, 6))/denominator
-          + cpp_float(ts::ch(grave, 6))/denominator;
+            cpp_float(ts::ch(day, w))/denominator
+          + cpp_float(ts::ch(swing, w))/denominator
+          + cpp_float(ts::ch(grave, w))/denominator;
           
           same_shift = p;
-          cout << same_shift << endl;
+          cout << ts::round_x_decimal_places(same_shift, 4) << endl;
         }
         
         void c() {
-          cout << 1 - same_shift << endl;
+          cout << ts::round_x_decimal_places(1 - same_shift, 4)<< endl;
         }
         
         void d() {
-          cout << "UHH" << endl;
+          cpp_float denominator = cpp_float(ts::ch(day+swing+grave, w));
+          cpp_float numerator = cpp_float(ts::ch(grave+swing, w) + ts::ch(day+grave, w)
+            + ts::ch(day+swing, w) - ts::ch(grave, w) - ts::ch(swing, w) - ts::ch(day, w));
+            
+          cpp_float p = numerator / denominator;
+            
+          cout << ts::round_x_decimal_places(p, 4) << endl;
         }
       }
     
       namespace sec4 {
+        int cellular = 5, cordless = 5, corded = 5;
+        int total = cellular + cordless + corded;
         
+        void a() {
+            cpp_float p = cpp_float(ts::ch(cordless, cordless) * ts::ch(cellular + corded, cordless)) 
+          / cpp_float(ts::ch(total, cellular + cordless));
+          
+          cout << p << endl;
+        }
+        
+        void b() {
+          int n = 10;
+          cpp_float denominator = cpp_float(ts::ch(cellular+cordless+corded, n));
+          cpp_float numerator = 3 * cpp_float(ts::ch(cordless, 1) * ts::ch(corded, 4)
+          + ts::ch(cordless, 2) * ts::ch(corded, 3) + ts::ch(cordless, 3) * ts::ch(corded, 2)
+          + ts::ch(cordless, 4) * ts::ch(corded, 1));
+          
+          cpp_float p = numerator / denominator;
+          cout << p << endl;
+        }
+        
+        void c() {
+          cpp_float p = cpp_float(ts::ch(cellular, 2) * ts::ch(cordless, 2) * ts::ch(corded, 2))
+          / cpp_float(ts::ch(total, 6));
+          
+          cout << p << endl;
+        }
       }
     
       void run() {
