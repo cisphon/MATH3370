@@ -567,6 +567,29 @@ namespace hw {
       }
     }
   
+    // 2.4 - Conditional Probability
+    namespace four {
+      namespace sec1 {
+        double p_a = 0.55, p_b = 0.40, p_a_int_b = 0.20;
+        
+        void a() {
+          
+        }
+      }
+      
+      namespace sec2 {
+      
+      }
+      
+      namespace sec3 {
+        
+      }
+    
+      namespace sec4 {
+        
+      }
+    }
+  
     void run() {
       one::sec2::a();
       one::sec2::b();
