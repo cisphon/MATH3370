@@ -6,5 +6,5 @@ using namespace Rcpp;
 // [[Rcpp::export]]
 void run()
 {
-  hw::web::seven::sec1::a();
+  hw::web::seven::sec2::a();
 }

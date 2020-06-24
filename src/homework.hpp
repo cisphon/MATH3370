@@ -609,9 +609,40 @@ namespace hw {
       namespace sec1 {
         vector<int> x {1,2,4,8,16};
         vector<double> px {0.05, 0.15, 0.30, 0.35, 0.15};
+        vector<int> xs(x);
+        
+        double ex = 0, vx = 0;
+        void a() {
+          ex = ts::E(x, px);
+          cout << ts::round_x_decimal_places(ex, 2) << endl;
+        }
+        
+        void b() {
+          transform(xs.begin(), xs.end(), xs.begin(), [] (int x) {return x*x;});
+          
+          vx = ts::E(xs, px) - (ex * ex);
+          
+          cout << ts::round_x_decimal_places(vx, 4) << endl;
+        }
+        
+        void c() {
+          cout << ts::round_x_decimal_places(sqrt(vx), 3) << endl;
+        }
+        
+        void d() {
+          double sum = 0, hold;
+          for (int i = 0; i < x.size(); ++i)
+            sum += ((x[i] - ex) * (x[i] - ex) * px[i]);
+          cout << sum << endl;
+        }
+      }
+    
+      namespace sec2 {
+        vector<int> y {0,1,2,3};
+        vector<double> py {0.45, 0.25, 0.25, 0.05};
         
         void a() {
-          cout << ts::EX(x, px) << endl;
+          cout << ts::E(y, py) << endl;
         }
       }
     }

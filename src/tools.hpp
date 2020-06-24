@@ -12,6 +12,7 @@
 #include <iomanip>
 #include <bitset>
 #include <chrono>
+#include <functional>
 
 #include <boost/multiprecision/cpp_int.hpp>
 #include <boost/multiprecision/cpp_dec_float.hpp>
@@ -258,8 +259,8 @@ namespace ts {
   {
       return perm(n, k) / fact(k);
   } 
-  
-  double EX(vector<int> x, vector<double> px)
+
+  double E(vector<int> x, vector<double> px)
   {
     double sum = 0;
     for (int i = 0; i < x.size(); ++i)

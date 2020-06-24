@@ -1,7 +1,7 @@
 [
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-        "file_last_write": 1592982398.0,
+        "file_last_write": 1593010597.0,
         "definitions": [
             {
                 "usr": "c:@N@hw@N@web@N@one@N@sec2@F@a#",
@@ -409,12 +409,57 @@
                 "column": 14
             },
             {
+                "usr": "c:@N@hw@N@web@N@seven@N@sec1@F@a#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "a",
+                "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
+                "line": 615,
+                "column": 14
+            },
+            {
+                "usr": "c:@N@hw@N@web@N@seven@N@sec1@F@b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "b",
+                "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
+                "line": 620,
+                "column": 14
+            },
+            {
+                "usr": "c:@N@hw@N@web@N@seven@N@sec1@F@c#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "c",
+                "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
+                "line": 628,
+                "column": 14
+            },
+            {
+                "usr": "c:@N@hw@N@web@N@seven@N@sec1@F@d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "d",
+                "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
+                "line": 632,
+                "column": 14
+            },
+            {
+                "usr": "c:@N@hw@N@web@N@seven@N@sec2@F@a#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "a",
+                "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
+                "line": 644,
+                "column": 14
+            },
+            {
                 "usr": "c:@N@hw@N@web@F@run#",
                 "kind": 6,
                 "parent_name": "",
                 "name": "run",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 597,
+                "line": 650,
                 "column": 10
             },
             {
@@ -423,7 +468,7 @@
                 "parent_name": "",
                 "name": "q34",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 640,
+                "line": 693,
                 "column": 14
             },
             {
@@ -432,7 +477,7 @@
                 "parent_name": "",
                 "name": "q35",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 668,
+                "line": 721,
                 "column": 14
             },
             {
@@ -441,7 +486,7 @@
                 "parent_name": "",
                 "name": "q36",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 685,
+                "line": 738,
                 "column": 14
             },
             {
@@ -450,7 +495,7 @@
                 "parent_name": "",
                 "name": "q37",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 701,
+                "line": 754,
                 "column": 14
             },
             {
@@ -459,7 +504,7 @@
                 "parent_name": "",
                 "name": "q38",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 708,
+                "line": 761,
                 "column": 14
             },
             {
@@ -468,7 +513,7 @@
                 "parent_name": "",
                 "name": "q44",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 728,
+                "line": 781,
                 "column": 14
             },
             {
@@ -477,7 +522,7 @@
                 "parent_name": "",
                 "name": "q45",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 747,
+                "line": 800,
                 "column": 14
             },
             {
@@ -486,7 +531,7 @@
                 "parent_name": "",
                 "name": "q46",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 771,
+                "line": 824,
                 "column": 14
             },
             {
@@ -495,7 +540,7 @@
                 "parent_name": "",
                 "name": "q47",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 802,
+                "line": 855,
                 "column": 14
             },
             {
@@ -504,7 +549,7 @@
                 "parent_name": "",
                 "name": "q48",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 818,
+                "line": 871,
                 "column": 14
             },
             {
@@ -513,7 +558,7 @@
                 "parent_name": "",
                 "name": "a",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 843,
+                "line": 896,
                 "column": 14
             },
             {
@@ -522,7 +567,7 @@
                 "parent_name": "",
                 "name": "b",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 848,
+                "line": 901,
                 "column": 14
             },
             {
@@ -531,7 +576,7 @@
                 "parent_name": "",
                 "name": "c",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 852,
+                "line": 905,
                 "column": 14
             },
             {
@@ -540,7 +585,7 @@
                 "parent_name": "",
                 "name": "d",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 857,
+                "line": 910,
                 "column": 14
             },
             {
@@ -549,7 +594,7 @@
                 "parent_name": "",
                 "name": "e",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 863,
+                "line": 916,
                 "column": 14
             },
             {
@@ -558,14 +603,14 @@
                 "parent_name": "",
                 "name": "run",
                 "file": "/home/cisphon/Desktop/RStatistics/src/homework.hpp",
-                "line": 873,
+                "line": 926,
                 "column": 10
             }
         ]
     },
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/main.cpp",
-        "file_last_write": 1592982145.0,
+        "file_last_write": 1593010639.0,
         "definitions": [
             {
                 "usr": "c:@F@run#",
@@ -580,7 +625,7 @@
     },
     {
         "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-        "file_last_write": 1592980546.0,
+        "file_last_write": 1593010359.0,
         "definitions": [
             {
                 "usr": "c:@N@ts@FT@>1#Tput_nums_in_vector#&I#$@N@std@N@__cxx11@S@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@S@allocator>#C#v#",
@@ -588,7 +633,7 @@
                 "parent_name": "",
                 "name": "put_nums_in_vector(int &, std::__cxx11::string)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 25,
+                "line": 26,
                 "column": 8
             },
             {
@@ -597,7 +642,7 @@
                 "parent_name": "",
                 "name": "put_nums_in_map(int &, std::__cxx11::string)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 36,
+                "line": 37,
                 "column": 8
             },
             {
@@ -606,7 +651,7 @@
                 "parent_name": "",
                 "name": "put_nums_in_deque(int &, std::__cxx11::string)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 49,
+                "line": 50,
                 "column": 8
             },
             {
@@ -615,7 +660,7 @@
                 "parent_name": "",
                 "name": "put_number_of_nums_in_vector(int &, const std::__cxx11::string)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 59,
+                "line": 60,
                 "column": 8
             },
             {
@@ -624,7 +669,7 @@
                 "parent_name": "",
                 "name": "round_x_decimal_places(T, int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 78,
+                "line": 79,
                 "column": 10
             },
             {
@@ -633,7 +678,7 @@
                 "parent_name": "",
                 "name": "round_nearest_x(T, int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 85,
+                "line": 86,
                 "column": 7
             },
             {
@@ -642,7 +687,7 @@
                 "parent_name": "",
                 "name": "print_vector(const int &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 93,
+                "line": 94,
                 "column": 8
             },
             {
@@ -651,7 +696,7 @@
                 "parent_name": "",
                 "name": "print_2D_vector(const int &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 100,
+                "line": 101,
                 "column": 8
             },
             {
@@ -660,7 +705,7 @@
                 "parent_name": "",
                 "name": "print_deque(const int &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 112,
+                "line": 113,
                 "column": 8
             },
             {
@@ -669,7 +714,7 @@
                 "parent_name": "",
                 "name": "vector_mean(const int &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 119,
+                "line": 120,
                 "column": 10
             },
             {
@@ -678,7 +723,7 @@
                 "parent_name": "",
                 "name": "vector_mode(const int &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 127,
+                "line": 128,
                 "column": 8
             },
             {
@@ -687,7 +732,7 @@
                 "parent_name": "",
                 "name": "deque_mean(const int &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 132,
+                "line": 133,
                 "column": 10
             },
             {
@@ -696,7 +741,7 @@
                 "parent_name": "",
                 "name": "deque_trimmed_mean(int &, double)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 140,
+                "line": 141,
                 "column": 10
             },
             {
@@ -705,7 +750,7 @@
                 "parent_name": "",
                 "name": "vector_median(int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 154,
+                "line": 155,
                 "column": 10
             },
             {
@@ -714,7 +759,7 @@
                 "parent_name": "",
                 "name": "deque_median(int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 162,
+                "line": 163,
                 "column": 5
             },
             {
@@ -723,7 +768,7 @@
                 "parent_name": "",
                 "name": "sum_vector(const int &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 170,
+                "line": 171,
                 "column": 10
             },
             {
@@ -732,7 +777,7 @@
                 "parent_name": "",
                 "name": "sum_deque(const int &)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 178,
+                "line": 179,
                 "column": 10
             },
             {
@@ -741,7 +786,7 @@
                 "parent_name": "",
                 "name": "increment_first_number_until_median_changes(int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 185,
+                "line": 186,
                 "column": 10
             },
             {
@@ -750,7 +795,7 @@
                 "parent_name": "",
                 "name": "decrement_last_number_until_median_changes(int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 193,
+                "line": 194,
                 "column": 10
             },
             {
@@ -759,7 +804,7 @@
                 "parent_name": "",
                 "name": "increment_last_number_until_median_changes(int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 201,
+                "line": 202,
                 "column": 10
             },
             {
@@ -768,7 +813,7 @@
                 "parent_name": "",
                 "name": "sample_range(int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 209,
+                "line": 210,
                 "column": 5
             },
             {
@@ -777,7 +822,7 @@
                 "parent_name": "",
                 "name": "sample_variance(const int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 215,
+                "line": 216,
                 "column": 10
             },
             {
@@ -786,7 +831,7 @@
                 "parent_name": "",
                 "name": "sample_standard_deviation(const int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 226,
+                "line": 227,
                 "column": 10
             },
             {
@@ -795,7 +840,7 @@
                 "parent_name": "",
                 "name": "deviations_from_mean(const int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 231,
+                "line": 232,
                 "column": 18
             },
             {
@@ -804,7 +849,7 @@
                 "parent_name": "",
                 "name": "fact(int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 242,
+                "line": 243,
                 "column": 11
             },
             {
@@ -813,7 +858,7 @@
                 "parent_name": "",
                 "name": "perm(int, int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 251,
+                "line": 252,
                 "column": 11
             },
             {
@@ -822,8 +867,17 @@
                 "parent_name": "",
                 "name": "ch(int, int)",
                 "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
-                "line": 257,
+                "line": 258,
                 "column": 11
+            },
+            {
+                "usr": "c:@N@ts@F@E#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "E(int, int)",
+                "file": "/home/cisphon/Desktop/RStatistics/src/tools.hpp",
+                "line": 263,
+                "column": 10
             }
         ]
     }
