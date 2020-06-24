@@ -15,6 +15,8 @@ void run()
 {
   hw::web::seven::sec3::a();
   hw::web::seven::sec3::b();
+  hw::web::seven::sec3::c();
+  hw::web::seven::sec3::d();
 }
 
 int main()
