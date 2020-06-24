@@ -1,3 +1,0 @@
-/home/cisphon/Desktop/RStatistics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/cisphon/Desktop/RStatistics/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/cisphon/Desktop/RStatistics/cmake-build-debug/CMakeFiles/untitled.dir
