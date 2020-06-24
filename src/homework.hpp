@@ -640,9 +640,43 @@ namespace hw {
       namespace sec2 {
         vector<int> y {0,1,2,3};
         vector<double> py {0.45, 0.25, 0.25, 0.05};
-        
+
         void a() {
           cout << ts::E(y, py) << endl;
+        }
+
+        void b() {
+          vector<int> ys(y);
+          transform(ys.begin(), ys.end(), ys.begin(), [] (int x) {return x*x;});
+
+          cout << 80 * ts::E(ys, py) << endl;
+        }
+      }
+
+      namespace sec3 {
+        vector<int> x {16, 18, 20};
+        vector<double> px {0.4, 0.3, 0.3};
+
+        vector<int> X(x);
+        void a() {
+          cout << ts::E(x, px) << endl;
+          cout << ts::ES(x, px) << endl;
+          cout << ts::V(x, px) << endl;
+        }
+
+        void b() {
+          transform(X.begin(), X.end(), X.begin(), [] (int X) {return 62*X - 650;});
+          cout << ts::E(X, px) << endl;
+        }
+
+        void c() {
+          cout << ts::V(X, px) << endl;
+        }
+
+        void d() {
+          vector<double> H(x.begin(), x.end());
+          transform(H.begin(), H.end(), H.begin(), [] (double X) {return X - 0.009*X*X;});
+          cout << ts::E(H, px);
         }
       }
     }

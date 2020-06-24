@@ -258,13 +258,35 @@ namespace ts {
   cpp_int ch(int n, int k)
   {
       return perm(n, k) / fact(k);
-  } 
+  }
 
-  double E(vector<int> x, vector<double> px)
+  template <typename T>
+  double E(vector<T> x, vector<double> px)
   {
     double sum = 0;
     for (int i = 0; i < x.size(); ++i)
       sum += (x[i] * px[i]);
     return sum;
+  }
+
+  template <typename T>
+  double ES(vector<T> x, vector<double> px)
+  {
+    transform(x.begin(), x.end(), x.begin(), [] (int x) {return x*x;});
+    double sum = 0;
+      for (int i = 0; i < x.size(); ++i)
+        sum += (x[i] * px[i]);
+    return sum;
+  }
+
+  template <typename T>
+  double V(vector<T> x, vector<double> px)
+  {
+    vector<T> xs(x);
+    transform(xs.begin(), xs.end(), xs.begin(), [] (T x) {return x*x;});
+
+    double ex = E(x, px);
+
+    return E(xs, px) - ex * ex;
   }
 }
