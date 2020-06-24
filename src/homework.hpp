@@ -60,7 +60,7 @@ namespace hw {
         vector<double> a() {
           vector<double> nums;
           ts::put_nums_in_vector(nums, "papers.txt");
-          
+
           int sum = ts::sum_vector(nums);
           for (int i = 0; i < nums.size(); ++i)
             nums[i] = ((nums[i] / sum) * 100);
@@ -406,35 +406,39 @@ namespace hw {
     // 2.3 - Counting Techniques
     namespace three {
       namespace sec1 {
+        int zin = 7, mer = 9, cab = 13, tot = 29, bot = 6;
         void a() {
-          int z = 7;
-          cpp_int perms = ts::fact(z) / ts::fact(z - 3);
+          cpp_int perms = ts::fact(zin) / ts::fact(zin - 3);
           cout << perms << endl;
         }
       
         void b() {
-          int t = 29;
-          int b = 6;
-          cpp_int top = ts::fact(t);
-          cpp_int bottom = ts::fact(b) * ts::fact(t - b);
+
+          cpp_int top = ts::fact(tot);
+          cpp_int bottom = ts::fact(bot) * ts::fact(tot - bot);
     
           cout << top / bottom << endl;
         }
       
         void c() {
-          cout << ts::ch(7, 2)*ts::ch(9, 2)*ts::ch(13, 2)<< endl;
+          cout << ts::ch(zin, 2)*ts::ch(mer, 2)*ts::ch(cab, 2)<< endl;
         }
         
         void d() {
-          cpp_int top = ts::ch(7, 2)*ts::ch(9, 2)*ts::ch(13, 2);
-          cpp_int bottom = ts::ch(29, 6);
-          cout << cpp_float(top) / cpp_float(bottom) << endl;
+          cpp_int top = ts::ch(zin, 2) * ts::ch(mer, 2) * ts::ch(cab, 2);
+          cpp_int bottom = ts::ch(tot, bot);
+          cout << 
+            ts::round_x_decimal_places(cpp_float(top) / cpp_float(bottom), 3) 
+            << endl;
         }
+        
       
         void e() {
-          cpp_int top = ts::ch(7, 6)+ts::ch(9, 6)+ts::ch(13, 6);
-          cpp_int bottom = ts::ch(29, 6);
-          cout << cpp_float(top) / cpp_float(bottom) << endl;
+          cpp_int top = ts::ch(zin, bot)+ts::ch(mer, bot)+ts::ch(cab, bot);
+          cpp_int bottom = ts::ch(tot, bot);
+          cout << 
+            ts::round_x_decimal_places(cpp_float(top) / cpp_float(bottom), 3) 
+            << endl;
         }
       }
       
@@ -587,6 +591,28 @@ namespace hw {
     
       namespace sec4 {
         
+      }
+    }
+  
+    // 3.1 - Random Values
+    namespace five {
+    
+    }
+  
+    // 3.2 
+    namespace six {
+      
+    }
+  
+    // 3.3
+    namespace seven {
+      namespace sec1 {
+        vector<int> x {1,2,4,8,16};
+        vector<double> px {0.05, 0.15, 0.30, 0.35, 0.15};
+        
+        void a() {
+          cout << ts::EX(x, px) << endl;
+        }
       }
     }
   
@@ -826,8 +852,47 @@ namespace hw {
       }
     }
   
-    void run()
-    {
+    // 1.3 - 1.4 Measures of Location and Variability
+    namespace two {
+    
+    }
+  
+    // 2.3 - Counting Techniques
+    namespace three {
+      namespace sec1 {
+        int zin = 8, mer = 10, cab = 12, tot = 30, bot = 6;
+        cpp_int c_ans = 0;
+        void a() {
+          cpp_int perms = ts::perm(zin, 3);
+          cout << perms << endl;
+        }
+        
+        void b() {
+          cout << ts::ch(tot, bot) << endl;
+        }
+        
+        void c() {
+          c_ans = ts::ch(zin, 2) * ts::ch(mer, 2) * ts::ch(cab, 2);
+          cout << c_ans << endl;
+        }
+        
+        void d() {
+          cpp_float top = cpp_float(c_ans);
+          cpp_float bottom = cpp_float(ts::ch(tot, bot));
+          cout << ts::round_x_decimal_places(top / bottom, 3) << endl;
+        }
+        
+        void e() {
+          cpp_int top = ts::ch(zin, bot)+ts::ch(mer, bot)+ts::ch(cab, bot);
+          cpp_int bottom = ts::ch(tot, bot);
+          cout << 
+            ts::round_x_decimal_places(cpp_float(top) / cpp_float(bottom), 3) 
+            << endl;
+        }
+      }
+    }
+  
+    void run() {
       
     }
   }

@@ -247,15 +247,23 @@ namespace ts {
     return num;
   }
   
-  // choose
-  cpp_int ch(int n, int k)
-  {
-    return fact(n) / (fact(k) * fact(n - k));
-  }
-  
   // permutation
   cpp_int perm(int n, int k)
   {
     return fact(n) / fact(n - k);
+  }
+  
+  // choose
+  cpp_int ch(int n, int k)
+  {
+      return perm(n, k) / fact(k);
+  } 
+  
+  double EX(vector<int> x, vector<double> px)
+  {
+    double sum = 0;
+    for (int i = 0; i < x.size(); ++i)
+      sum += (x[i] * px[i]);
+    return sum;
   }
 }
