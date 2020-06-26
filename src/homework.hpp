@@ -1172,6 +1172,13 @@ namespace exam {
   }
 
   /*
+   * Eighty percent of all vehicles examined at a certain emissions inspection station pass the inspection. Assuming that successive vehicles pass or fail independently of one another, calculate the following probabilities. (Enter your answers to three decimal places.)
+   * */
+  namespace sec7 {
+
+  }
+
+  /*
    * Airlines sometimes overbook flights. Suppose that for a plane with 50 seats, 55 passengers have tickets. Define the random variable Y as the number of ticketed passengers who actually show up for the flight. The probability mass function of Y appears in the accompanying table.
    */
   namespace sec9 {
@@ -1187,6 +1194,7 @@ namespace exam {
                        {54, 0.02},
                        {55, 0.01}};
 
+    // What is the probability that the flight will accommodate all ticketed passengers who show up?
     void a() {
       double sum = 0;
       for (int i = 45; i <= 50; ++i)
@@ -1194,6 +1202,7 @@ namespace exam {
       cout << sum << endl;
     }
 
+    // What is the probability that not all ticketed passengers who show up can be accommodated?
     void b() {
       double sum = 0;
       for (int i = 51; i <= 55; ++i)
@@ -1202,11 +1211,15 @@ namespace exam {
     }
 
     void c() {
+      /*
+       * If you are the first person on the standby list (which means you will be the first one to get on the plane if there are any seats available after all ticketed passengers have been accommodated), what is the probability that you will be able to take the flight?
+       */
       double sum = 0;
       for (int i = 45; i < 50; ++i)
         sum += m[i];
       cout << sum << endl;
 
+      // What is this probability if you are the third person on the standby list?
       sum = 0;
       for (int i = 45; i <= 47; ++i)
         sum += m[i];
@@ -1221,32 +1234,44 @@ namespace exam {
     vector<double> x{0, 1, 2, 3, 4, 5, 6};
     vector<double> px{0.12, 0.15, 0.20, 0.23, 0.20, 0.07, 0.03};
 
+    double b_ans = 0;
     void F() {
       double sum = 0;
-      for (int num = 0; num < px.size(); ++num) {
-        sum += px[num];
+      for (int i = 0; i < px.size(); ++i) {
+        sum += px[i];
         cout << sum << " ";
       }
       cout << endl;
     }
 
+    //{at most three lines are in use}
     void a() {
       double sum = 0;
-      for (int num = 0; num <= 3; ++num)
-        sum += px[num];
+      for (int i = 0; i <= 3; ++i)
+        sum += px[i];
       cout << sum << endl;
     }
 
+    // {fewer than three lines are in use}
     void b() {
-
+      double sum = 0;
+      for (int i = 0; i <= 2; ++i)
+        sum += px[i];
+      b_ans = sum;
+      cout << b_ans << endl;
     }
 
+    // {at least three lines are in use}
     void c() {
-
+      cout << 1 - b_ans << endl;
     }
 
+    // {between two and five lines, inclusive, are in use}
     void d() {
-
+      double sum = 0;
+      for (int i = 2; i <= 5; ++i)
+        sum += px[i];
+      cout << sum << endl;
     }
   }
 
@@ -1257,10 +1282,12 @@ namespace exam {
     vector<double> y{0, 1, 2, 3};
     vector<double> py{0.55, 0.25, 0.15, 0.05};
 
+    // Compute E(Y).
     void a() {
       cout << ts::E(y, py) << endl;
     }
 
+    // Suppose an individual with Y violations incurs a surcharge of $100Y2
     void b() {
       cout << ts::E(y, py, [](double Y) { return 100 * Y * Y; }) << endl;
     }
