@@ -654,30 +654,42 @@ namespace hw {
       }
 
       namespace sec3 {
-        vector<int> x {16, 18, 20};
+        #define mydata true
+        #if mydata
+        vector<double> x {16, 18, 20};
         vector<double> px {0.4, 0.3, 0.3};
+        double F1(double X) { return 62 * X - 650; }
+        double F2(double X) { return X - 0.009*X*X; }
+        #else
+        vector<int> x {16, 18, 20};
+        vector<double> px {0.5, 0.4, 0.1};
+        double F1(int X) { return 69 * X - 650; }
+        double F2(int X) { return X - 0.008*X*X; }
+        #endif
 
-        vector<int> X(x);
         void a() {
+          cout << "(a)" << endl;
           cout << ts::E(x, px) << endl;
-          cout << ts::ES(x, px) << endl;
+          cout << ts::E(x, px, [] (double X) -> double {return X*X;}) << endl;
           cout << ts::V(x, px) << endl;
         }
 
         void b() {
-          transform(X.begin(), X.end(), X.begin(), [] (int X) {return 62*X - 650;});
-          cout << ts::E(X, px) << endl;
+          cout << "(b)" << endl;
+          cout << ts::E(x, px, F1) << endl;
         }
 
         void c() {
-          cout << ts::V(X, px) << endl;
+          cout << "(c)" << endl;
+          cout << ts::V(x, px, F1) << endl;
         }
 
         void d() {
-          vector<double> H(x.begin(), x.end());
-          transform(H.begin(), H.end(), H.begin(), [] (double X) {return X - 0.009*X*X;});
-          cout << ts::E(H, px);
+          cout << "(d)" << endl;
+          cout << ts::E(x, px, F2) << endl;
         }
+
+        void run() { a(); b(); c(); d(); }
       }
     }
   

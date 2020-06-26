@@ -260,6 +260,7 @@ namespace ts {
       return perm(n, k) / fact(k);
   }
 
+  // This is the E(X) formula.
   template <typename T>
   double E(vector<T> x, vector<double> px)
   {
@@ -269,24 +270,27 @@ namespace ts {
     return sum;
   }
 
+  // This is the E(F) formula.
   template <typename T>
-  double ES(vector<T> x, vector<double> px)
+  double E(vector<T> x, vector<double> px, double F(double))
   {
-    transform(x.begin(), x.end(), x.begin(), [] (int x) {return x*x;});
-    double sum = 0;
-      for (int i = 0; i < x.size(); ++i)
-        sum += (x[i] * px[i]);
-    return sum;
+    transform(x.begin(), x.end(), x.begin(), F); // transform X -> F(X)
+    return E(x, px);
   }
 
+  // This is the V(X) "variance" formula.
   template <typename T>
   double V(vector<T> x, vector<double> px)
   {
-    vector<T> xs(x);
-    transform(xs.begin(), xs.end(), xs.begin(), [] (T x) {return x*x;});
-
     double ex = E(x, px);
+    return E(x, px, [] (T X) -> double {return X*X;}) - ex * ex;
+  }
 
-    return E(xs, px) - ex * ex;
+  // This is the V(X) "variance" formula.
+  template <typename T>
+  double V(vector<T> x, vector<double> px, double F(double))
+  {
+    transform(x.begin(), x.end(), x.begin(), F); // transform X -> F(X)
+    return V(x, px);
   }
 }
