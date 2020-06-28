@@ -822,6 +822,82 @@ namespace hw {
         }
       }
     }
+
+    // 3.4 - The Binomial Distribution
+    namespace eight {
+      namespace sec1 {
+        // b(4; 8, 0.3)
+        void a() {
+          cpp_float result = ts::bin(4, 8, 0.3);
+          cout << ts::round_x_decimal_places(result, 3) << endl;
+        }
+
+        // b(6; 8, 0.55)
+        void b() {
+          cpp_float result = ts::bin(6, 8, 0.55);
+          cout << ts::round_x_decimal_places(result, 3) << endl;
+        }
+
+        //P(3 ≤ X ≤ 5) when n = 7 and p = 0.55
+        void c() {
+          int n = 7;
+          double p = 0.55;
+          cpp_float result = ts::P(3, 5, n, p);
+          cout << ts::round_x_decimal_places(result, 3) << endl;
+        }
+
+        // P(1 ≤ X) when n = 9 and p = 0.15
+        void d() {
+          int n = 9;
+          double p = 0.15;
+          cpp_float result = 1 - ts::bin(0, n, p);
+          cout << ts::round_x_decimal_places(result, 3) << endl;
+        }
+      }
+
+      namespace sec2 {
+        int n = 25;
+        double p = 0.05;
+
+        // Determine P(X ≤ 2)
+        void a() {
+          cpp_float result = ts::P(0, 2, n, p);
+          cout << ts::round_x_decimal_places(result, 3) << endl;
+        }
+
+        // Determine P(X ≥ 5)
+        void b() {
+          // P(X >= 5) = 1 - P(X < 5)
+          cpp_float result = 1 - ts::P(0, 4, n, p);
+          cout << ts::round_x_decimal_places(result, 3) << endl;
+        }
+
+        // Determine P(1 ≤ X ≤ 4) = P(X<=4) - P(X <= 0)
+        void c() {
+          cpp_float result = ts::P(1, 4, n, p);
+          cout << ts::round_x_decimal_places(result, 3) << endl;
+        }
+
+        // What is the probability that none of the 25 boards is defective?
+        void d() {
+          cpp_float result = ts::bin(0, n, p);
+          cout << ts::round_x_decimal_places(result, 3) << endl;
+        }
+
+        void e() {
+          cpp_float result = n * p;
+          cout << ts::round_x_decimal_places(result, 3)<< endl;
+
+          double q = 1 - p;
+          result = sqrt(n * p * q);
+          cout << ts::round_x_decimal_places(result, 3) << endl;
+        }
+      }
+
+      namespace sec3 {
+        
+      }
+    }
   }
 
   // discussions
