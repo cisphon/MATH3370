@@ -822,6 +822,105 @@ namespace hw {
         }
       }
     }
+
+    // 5.3-5.4
+    namespace eight {
+      namespace sec1 {
+        map<double, double> nums = {{25, 0.2},
+                                    {45, 0.5},
+                                    {60, 0.3}};
+
+        map<double, double> nums2 = {{25, 0.0},
+                                     {35, 0.0},
+                                     {45, 0.0},
+                                     {42.5, 0},
+                                     {52.5, 0.0},
+                                     {60, 0.0}};
+
+        map<double, double> dists = {{0.0,   0.0},
+                                  {200.0,  0.0},
+                                  {112.5, 0.0},
+                                  {612.5, 0.0}};
+
+        void a() {
+          for (auto num1 = nums.begin(); num1 != nums.end(); ++num1) {
+            for (auto num2 = nums.begin(); num2 != nums.end(); ++num2) {
+              //cout << num1->first << ' ' << num2->first << ' ';
+
+              double p = num1->second * num2->second;
+              //cout << p << ' ';
+
+              double mean = (num1->first + num2->first) / 2.0;
+              //cout << mean << ' ';
+
+              nums2[mean] += p;
+
+              /*
+              cout << ((num1->first - mean) * (num1->first - mean)
+                       + (num2->first - mean) * (num2->first - mean)) << endl;
+              */
+            }
+          }
+          cout << "CAREFUL!!!! WATCH THE ORDERING!!!" << endl;
+          for (auto num = nums2.begin(); num != nums2.end(); ++num)
+            cout << num->first << ' ';
+          cout << endl;
+          for (auto num = nums2.begin(); num != nums2.end(); ++num)
+            cout << num->second << ' ';
+          cout << endl << endl;
+
+          double sum = 0.0;
+          for (auto num = nums2.begin(); num != nums2.end(); ++num)
+            sum += (num->first * num->second);
+          cout << sum << endl << endl;
+        }
+
+        void b() {
+          for (auto num1 = nums.begin(); num1 != nums.end(); ++num1) {
+            for (auto num2 = nums.begin(); num2 != nums.end(); ++num2) {
+              double p = num1->second * num2->second;
+              double mean = (num1->first + num2->first) / 2.0;
+              double s2 = ((num1->first - mean) * (num1->first - mean)
+                           + (num2->first - mean) * (num2->first - mean));
+              dists[s2] += p;
+            }
+          }
+
+          cout << "CAREFUL!!!! WATCH THE ORDERING!!!" << endl;
+          for (auto num = dists.begin(); num != dists.end(); ++num)
+            cout << num->first << ' ';
+          cout << endl;
+          for (auto num = dists.begin(); num != dists.end(); ++num)
+            cout << num->second << ' ';
+          cout << endl << endl;
+
+          double sum = 0.0;
+          for (auto num = dists.begin(); num != dists.end(); ++num)
+            sum += (num->first * num->second);
+          cout << sum << endl;
+        }
+      }
+
+      namespace sec2 {
+        map<double, double> salaries = {{1, 29.7},
+                                        {2, 33.6},
+                                        {3, 30.2},
+                                        {4, 33.6},
+                                        {5, 25.8},
+                                        {6, 29.7}};
+        void a () {
+
+        }
+      }
+
+      namespace sec3 {
+
+      }
+
+      namespace sec4 {
+
+      }
+    }
   }
 
   // discussions
@@ -1175,7 +1274,39 @@ namespace exam {
    * Eighty percent of all vehicles examined at a certain emissions inspection station pass the inspection. Assuming that successive vehicles pass or fail independently of one another, calculate the following probabilities. (Enter your answers to three decimal places.)
    * */
   namespace sec7 {
+    double per = 0.8;
 
+    int x = 3, y = 1;
+
+    cpp_float a_ans = 0, c_ans = 0, d_ans = 0;
+
+    // P(all of the next three vehicles inspected pass)
+    void a() {
+      a_ans = cpp_float(ts::ch(x, x)) * cpp_float(pow(per, x) * pow((1 - 0.80), x - x));
+      cout << a_ans << endl;
+    }
+
+    // P(at least one of the next three inspected fails)
+    void b() {
+      cout << 1 - a_ans << endl;
+    }
+
+    // P(exactly one of the next three inspected passes)
+    void c() {
+      c_ans = cpp_float(ts::ch(x, y)) * cpp_float(pow(per, y) * pow((1 - 0.80), x - y));
+      cout << c_ans << endl;
+    }
+
+    void d() {
+      d_ans = cpp_float(ts::ch(x, 0)) * cpp_float(pow(per, 0) * pow((1 - 0.80), x))
+              + cpp_float(ts::ch(x, y)) * cpp_float(pow(per, y) * pow((1 - 0.80), x - y));
+      cout << d_ans << endl;
+    }
+
+    void e() {
+      cpp_float denom = 1 - cpp_float(ts::ch(x, 0)) * cpp_float(pow(per, 0) * pow((1 - 0.80), x));
+      cout << a_ans / denom << endl;
+    }
   }
 
   /*
@@ -1235,6 +1366,7 @@ namespace exam {
     vector<double> px{0.12, 0.15, 0.20, 0.23, 0.20, 0.07, 0.03};
 
     double b_ans = 0;
+
     void F() {
       double sum = 0;
       for (int i = 0; i < px.size(); ++i) {
