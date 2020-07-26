@@ -823,95 +823,6 @@ namespace hw {
       }
     }
 
-<<<<<<< HEAD
-    // 5.3-5.4
-    namespace eight {
-      namespace sec1 {
-        map<double, double> nums = {{25, 0.2},
-                                    {45, 0.5},
-                                    {60, 0.3}};
-
-        map<double, double> nums2 = {{25, 0.0},
-                                     {35, 0.0},
-                                     {45, 0.0},
-                                     {42.5, 0},
-                                     {52.5, 0.0},
-                                     {60, 0.0}};
-
-        map<double, double> dists = {{0.0,   0.0},
-                                  {200.0,  0.0},
-                                  {112.5, 0.0},
-                                  {612.5, 0.0}};
-
-        void a() {
-          for (auto num1 = nums.begin(); num1 != nums.end(); ++num1) {
-            for (auto num2 = nums.begin(); num2 != nums.end(); ++num2) {
-              //cout << num1->first << ' ' << num2->first << ' ';
-
-              double p = num1->second * num2->second;
-              //cout << p << ' ';
-
-              double mean = (num1->first + num2->first) / 2.0;
-              //cout << mean << ' ';
-
-              nums2[mean] += p;
-
-              /*
-              cout << ((num1->first - mean) * (num1->first - mean)
-                       + (num2->first - mean) * (num2->first - mean)) << endl;
-              */
-            }
-          }
-          cout << "CAREFUL!!!! WATCH THE ORDERING!!!" << endl;
-          for (auto num = nums2.begin(); num != nums2.end(); ++num)
-            cout << num->first << ' ';
-          cout << endl;
-          for (auto num = nums2.begin(); num != nums2.end(); ++num)
-            cout << num->second << ' ';
-          cout << endl << endl;
-
-          double sum = 0.0;
-          for (auto num = nums2.begin(); num != nums2.end(); ++num)
-            sum += (num->first * num->second);
-          cout << sum << endl << endl;
-        }
-
-        void b() {
-          for (auto num1 = nums.begin(); num1 != nums.end(); ++num1) {
-            for (auto num2 = nums.begin(); num2 != nums.end(); ++num2) {
-              double p = num1->second * num2->second;
-              double mean = (num1->first + num2->first) / 2.0;
-              double s2 = ((num1->first - mean) * (num1->first - mean)
-                           + (num2->first - mean) * (num2->first - mean));
-              dists[s2] += p;
-            }
-          }
-
-          cout << "CAREFUL!!!! WATCH THE ORDERING!!!" << endl;
-          for (auto num = dists.begin(); num != dists.end(); ++num)
-            cout << num->first << ' ';
-          cout << endl;
-          for (auto num = dists.begin(); num != dists.end(); ++num)
-            cout << num->second << ' ';
-          cout << endl << endl;
-
-          double sum = 0.0;
-          for (auto num = dists.begin(); num != dists.end(); ++num)
-            sum += (num->first * num->second);
-          cout << sum << endl;
-        }
-      }
-
-      namespace sec2 {
-        map<double, double> salaries = {{1, 29.7},
-                                        {2, 33.6},
-                                        {3, 30.2},
-                                        {4, 33.6},
-                                        {5, 25.8},
-                                        {6, 29.7}};
-        void a () {
-
-=======
     // 3.4 - The Binomial Distribution
     namespace eight {
       namespace sec1 {
@@ -980,20 +891,248 @@ namespace hw {
           double q = 1 - p;
           result = sqrt(n * p * q);
           cout << ts::round_x_decimal_places(result, 3) << endl;
->>>>>>> f739e83844d77987b731adc58013a23e86612bc0
         }
       }
 
       namespace sec3 {
-<<<<<<< HEAD
-
       }
 
       namespace sec4 {
 
-=======
+      }
+    }
+
+    // 5.3-5.4
+    namespace nine {
+      namespace sec1 {
+        map<double, double> nums = {{25, 0.2},
+                                    {45, 0.5},
+                                    {60, 0.3}};
+
+        map<double, double> nums2 = {{25,   0.0},
+                                     {35,   0.0},
+                                     {45,   0.0},
+                                     {42.5, 0},
+                                     {52.5, 0.0},
+                                     {60,   0.0}};
+
+        map<double, double> dists = {{0.0,   0.0},
+                                     {200.0, 0.0},
+                                     {112.5, 0.0},
+                                     {612.5, 0.0}};
+
+        void a() {
+          for (auto num1 = nums.begin(); num1 != nums.end(); ++num1) {
+            for (auto num2 = nums.begin(); num2 != nums.end(); ++num2) {
+              cout << num1->first << ' ' << num2->first << ' ';
+
+              double p = num1->second * num2->second;
+              cout << p << ' ';
+
+              double mean = (num1->first + num2->first) / 2.0;
+              cout << mean << ' ';
+
+              nums2[mean] += p;
+
+              cout << ((num1->first - mean) * (num1->first - mean)
+                       + (num2->first - mean) * (num2->first - mean)) << endl;
+            }
+          }
+          cout << "CAREFUL!!!! WATCH THE ORDERING!!!" << endl;
+          for (auto num = nums2.begin(); num != nums2.end(); ++num)
+            cout << num->first << ' ';
+          cout << endl;
+          for (auto num = nums2.begin(); num != nums2.end(); ++num)
+            cout << num->second << ' ';
+          cout << endl << endl;
+
+          double sum = 0.0;
+          for (auto num = nums2.begin(); num != nums2.end(); ++num)
+            sum += (num->first * num->second);
+          cout << sum << endl << endl;
+        }
+
+        void b() {
+          for (auto num1 = nums.begin(); num1 != nums.end(); ++num1) {
+            for (auto num2 = nums.begin(); num2 != nums.end(); ++num2) {
+              double p = num1->second * num2->second;
+              double mean = (num1->first + num2->first) / 2.0;
+              double s2 = ((num1->first - mean) * (num1->first - mean)
+                           + (num2->first - mean) * (num2->first - mean));
+              dists[s2] += p;
+            }
+          }
+
+          cout << "CAREFUL!!!! WATCH THE ORDERING!!!" << endl;
+          for (auto num = dists.begin(); num != dists.end(); ++num)
+            cout << num->first << ' ';
+          cout << endl;
+          for (auto num = dists.begin(); num != dists.end(); ++num)
+            cout << num->second << ' ';
+          cout << endl << endl;
+
+          double sum = 0.0;
+          for (auto num = dists.begin(); num != dists.end(); ++num)
+            sum += (num->first * num->second);
+          cout << sum << endl;
+        }
+      }
+
+      namespace sec2 {
+        void a() {
+          map<double, double> salaries = {{1, 27.7},
+                                          {2, 31.6},
+                                          {3, 28.2},
+                                          {4, 31.6},
+                                          {5, 23.8},
+                                          {6, 27.7}};
+
+          map<double, double> occurrences;
+
+          double sum = 0, divisor = 0.0;
+          for (auto num1 = salaries.begin(); num1 != --salaries.end(); ++num1) {
+            for (auto num2 = next(num1); num2 != salaries.end(); ++num2) {
+
+              ++divisor;
+
+              double mean = ts::round_x_decimal_places(num1->second + num2->second, 2) / 2.0;
+              sum += mean;
+              ++occurrences[mean];
+
+              cout << num1->first << ' ' << num2->first << ' ';
+              cout << num1->second << ' ' << num2->second << ' ' << mean << endl;
+            }
+          }
+          cout << sum / divisor << endl;
+
+          cout << "WATCH FOR THE ORDER!!!" << endl;
+          for (auto it = occurrences.begin(); it != occurrences.end(); ++it)
+            cout << it->first << ' ' << it->second << endl;
+          cout << endl;
+        }
+
+        void b() {
+          cout << "BBBBBBBBBBBBBBBBBBBB" << endl;
+
+          map<double, double> salaries = {{1, 25.75},
+                                          {2, 29.65},
+                                          {3, 29.90}};
+
+          map<double, double> occurrences;
+
+          for (auto num1 = salaries.begin(); num1 != --salaries.end(); ++num1) {
+            for (auto num2 = next(num1); num2 != salaries.end(); ++num2) {
+              double mean = ts::round_x_decimal_places(num1->second + num2->second, 2) / 2.0;
+              ++occurrences[mean];
+
+              cout << num1->first << ' ' << num2->first << ' ';
+              cout << num1->second << ' ' << num2->second << ' ' << mean << endl;
+            }
+          }
+
+          cout << "WATCH FOR THE ORDER!!!" << endl;
+          for (auto it = occurrences.begin(); it != occurrences.end(); ++it)
+            cout << it->first << ' ' << it->second << endl;
+          cout << endl;
+        }
+      }
+
+      namespace sec3 {
         
->>>>>>> f739e83844d77987b731adc58013a23e86612bc0
+      }
+    }
+
+    // 7.1
+    namespace ten {
+      namespace sec4 {
+
+        vector<double> nums {2.0, 1.1, 6.0, 1.9, 5.4, 0.4, 1.0, 5.3,
+                             15.6, 0.7, 4.8, 0.9, 12.4, 5.3, 0.6};
+
+        /*
+        vector<double> nums {2.0, 1.1, 6.0, 1.7, 5.3, 0.4, 1.0, 5.3,
+                             15.7, 0.9, 4.8, 0.9, 12.2, 5.3, 0.6};*/
+        void a() {
+          double sum = 0.0;
+          for (int i = 0; i < nums.size(); ++i)
+            sum += nums[i];
+          cout << sum << endl;
+        }
+
+        void b() {
+
+        }
+      }
+    }
+
+    // 7.2 - 2.3
+    namespace eleven {
+      namespace sec7 {
+        vector<double> nums;
+
+        void a() {
+          ts::put_nums_in_vector(nums, "offshore.txt");
+
+          double mean = ts::vector_mean(nums);
+          double s = ts::round_x_decimal_places(ts::sample_standard_deviation(nums), 2);
+
+          cout << mean << ' ' << s << endl;
+        }
+
+        void b() {
+
+        }
+
+        void c() {
+
+        }
+      }
+    }
+
+    namespace twelve {
+      namespace two {
+        vector<double> nums = {32.1, 30.8, 31.1, 30.4, 31.0, 31.9};
+        double u = 30, o = 0.65, x = ts::vector_mean(nums), n = nums.size(),
+                s = ts::sample_standard_deviation(nums);
+
+        //vector<double> nums = {32.1, 30.6, 31.4, 30.4, 31.0, 31.9};
+        //double u = 30, o = 0.65, x = ts::vector_mean(nums), n = nums.size(),
+        //        s = ts::sample_standard_deviation(nums);
+
+        void a() {
+          cout << x << " " << u << " " << s << " " << sqrt(n) << endl;
+          double t = (x - u) / (s / sqrt(n));
+          cout << t << endl;
+        }
+
+        void b() {
+          double za = 2.33, U = 31;
+          cout << za + (u - U) / (o / sqrt(n)) << endl;
+
+          U = 32;
+          cout << za + (u - U) / (o / sqrt(n)) << endl;
+        }
+
+        void c() {
+          o = 0.8;
+          double za = 2.33, U = 31;
+          cout << za + (u - U) / (o / sqrt(n)) << endl;
+
+          U = 32;
+          cout << za + (u - U) / (o / sqrt(n)) << endl;
+        }
+      }
+
+      namespace three {
+        vector<double> nums;
+
+
+
+        void a() {
+          ts::put_nums_in_vector(nums, "organic.txt");
+
+
+        }
       }
     }
   }
@@ -1238,13 +1377,24 @@ namespace hw {
       }
     }
 
-    void run() {
+    // 7.2 - uhhh
+    namespace four {
+      vector<double> nums;
 
+      void a() {
+        ts::put_nums_in_vector(nums, "cancer.txt");
+
+        double mean = ts::vector_mean(nums);
+        double s = ts::sample_standard_deviation(nums);
+        int n = nums.size();
+
+        cout << mean << " " << s << " " << n << endl;
+      }
     }
   }
 }
 
-namespace exam {
+namespace exam1 {
   /*
    * The propagation of fatigue cracks in various aircraft parts has been the subject of extensive study in recent years. The accompanying data consists of propagation lives (flight hours/104) to reach a given crack size in fastener holes intended for use in military aircraft.
    */
@@ -1498,5 +1648,14 @@ namespace exam {
     void b() {
       cout << ts::E(y, py, [](double Y) { return 100 * Y * Y; }) << endl;
     }
+  }
+}
+
+namespace exam2 {
+  namespace sec1 {
+    
+  }
+  namespace sec2 {
+
   }
 }
